@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Linux 常规操作 | LIURONG</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="做时间的朋友！">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Linux 常规操作 | LIURONG">
+    <meta name="twitter:description" content="做时间的朋友！">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Linux 常规操作 | LIURONG">
+    <meta property="og:description" content="做时间的朋友！">
+
+    
+    <meta name="author" content="lroyle">
+    
+    
+<link rel="stylesheet" href="/css/vno.css">
+
+    
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="LIURONG" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://liurong.love/2023/05/09/2023/Linux%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+    
+<script src="/js/main.js"></script>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 LIURONG 的主页"><img src="/images/avatar.jpg" width="80" alt="LIURONG logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for LIURONG">LIURONG</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">面向大海 | 重新启航</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">做时间的朋友！</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">文字阁</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/about">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="https://weibo.com/lroyle" title="我的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/oneeno" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2023-05-09T07:14:28.000Z" class="post-list__meta--date date">2023-05-09</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Linux 常规操作</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="Linux基础操作"><a href="#Linux基础操作" class="headerlink" title="Linux基础操作"></a>Linux基础操作</h1><h2 id="1，远程连接-Linux"><a href="#1，远程连接-Linux" class="headerlink" title="1，远程连接 Linux"></a>1，远程连接 Linux</h2><p>先在查看 Linux 的 ip</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip addr</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 远程登录 Linux 系统</span></span><br><span class="line">ssh  root@<span class="number">10.0</span><span class="number">.0</span><span class="number">.3</span></span><br><span class="line"><span class="comment"># 断开连接</span></span><br><span class="line">exit</span><br><span class="line"><span class="comment"># 重启系统</span></span><br><span class="line">reboot</span><br><span class="line"><span class="comment"># 立即关机</span></span><br><span class="line">shutdown -h now</span><br><span class="line"><span class="comment"># 十分钟之后关机 </span></span><br><span class="line">shutdown -h <span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2、文件操作"><a href="#2、文件操作" class="headerlink" title="2、文件操作"></a>2、文件操作</h2><h3 id="切换目录"><a href="#切换目录" class="headerlink" title="切换目录"></a>切换目录</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd  <span class="comment">#全称 change directory</span></span><br><span class="line">例子</span><br><span class="line">cd 		local					<span class="comment"># 切换到子目录 local</span></span><br><span class="line">cd 		/usr/local				<span class="comment"># 切换到目录  /usr/local</span></span><br><span class="line">cd 	..							<span class="comment"># 切换到上一级目录</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看当前目录所在位置"><a href="#查看当前目录所在位置" class="headerlink" title="查看当前目录所在位置"></a>查看当前目录所在位置</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># print work directory</span></span><br><span class="line">pwd   <span class="comment"># print work directory</span></span><br><span class="line"></span><br><span class="line">[root@localhost ~]<span class="comment"># pwd</span></span><br><span class="line">/root</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="新建文件"><a href="#新建文件" class="headerlink" title="新建文件"></a>新建文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">touch</span><br><span class="line">touch	<span class="number">1.</span>txt						   <span class="comment"># 创建单个文件</span></span><br><span class="line">touch 	test&#123;<span class="number">01.</span><span class="number">.10</span>&#125;.txt			 	<span class="comment"># 批量创建文件</span></span><br><span class="line">touch 	/root/<span class="number">4.</span>txt					 	<span class="comment"># 在指定的 /root 目录下，创建文件 4.txt</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看目录下的文件"><a href="#查看目录下的文件" class="headerlink" title="查看目录下的文件"></a>查看目录下的文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ls 全称 <span class="built_in">list</span></span><br><span class="line">ls 		test09.txt						<span class="comment"># 查看 test09.txt 是否存在</span></span><br><span class="line">ls 		*.txt							<span class="comment"># 查看以 txt 结尾的所有文件</span></span><br><span class="line">ls		-l								<span class="comment"># 以一行一个文件的方式显示</span></span><br><span class="line">ls		-a								<span class="comment"># 查看所有文件，包括隐藏文件</span></span><br><span class="line">ls		-a	-l							<span class="comment"># 查看所有文件，以一行一个来显示，包括隐藏文件</span></span><br></pre></td></tr></table></figure>
+
+<p>以 . 开头的文件是隐藏文件，默认不显示</p>
+<h3 id="重命名"><a href="#重命名" class="headerlink" title="重命名"></a>重命名</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mv 全黎 move</span><br><span class="line">mv	<span class="number">.123</span>.txt	<span class="number">123.</span>txt					<span class="comment"># 将 .123.txt 文件重命名为 123.txt</span></span><br><span class="line">mv	<span class="number">123.</span>txt		/opt					<span class="comment"># 将当前目录下的 123.txt 移动到 /opt 目录下</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp  全称 copy</span><br><span class="line">cp 	test01.txt		/opt/				<span class="comment"># 将当前目录下的 test01.txt 复制到 /opt 目录下</span></span><br><span class="line">cp 	-a  dev01 		/opt/				<span class="comment"># 将目录 dev04 复制到 /opt 目录下</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">rm	/opt/<span class="number">123.</span>txt						<span class="comment"># 将 /opt 目录下的 123.txt 文件删除，需要回复 y 确认删除</span></span><br><span class="line">rm	-f	/opt/test01.txt					<span class="comment"># 将 /opt 目录下的 test01.txt 文件删除，不需要回复 y </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除一个目录， Linux 的参数大部分没有先后顺序</span></span><br><span class="line">rm	-fr	dev	</span><br><span class="line">rm	-rf	dev01</span><br><span class="line">rm	-f	-r	dev02</span><br><span class="line">rm	-r	-f	dev03</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建文件夹，创建目录-directory"><a href="#创建文件夹，创建目录-directory" class="headerlink" title="创建文件夹，创建目录　directory"></a>创建文件夹，创建目录　directory</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir	dev								<span class="comment"># 创建一个 dev 目录</span></span><br><span class="line">mkdir	dev&#123;<span class="number">01.</span><span class="number">.10</span>&#125;						 <span class="comment"># 批量创建多个目录</span></span><br><span class="line">mkdir	-p	<span class="number">1</span>/<span class="number">2</span>/<span class="number">3</span>/<span class="number">4</span>/<span class="number">5</span>/<span class="number">6</span>					 <span class="comment"># 一次性创建多级子目录</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Vi-编辑器"><a href="#Vi-编辑器" class="headerlink" title="Vi  编辑器"></a>Vi  编辑器</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">vi 		test03.txt						<span class="comment"># 编辑文件 test03.txt</span></span><br><span class="line">默认是常规模式，按 i,o,a 键可以进入编辑模式</span><br><span class="line">在编辑模式中按 ESC 回到常规模式</span><br><span class="line">常规模式按：（英文输入法下的冒号）进入命令模式</span><br><span class="line">命令模式按 ESC 回到常规模式</span><br><span class="line"></span><br><span class="line">:wq										<span class="comment"># 保存并退出</span></span><br><span class="line">:q!										<span class="comment"># 强制退出不保存</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看文件本内"><a href="#查看文件本内" class="headerlink" title="查看文件本内"></a>查看文件本内</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cat （从上往下）</span><br><span class="line">cat		test03.txt						<span class="comment"># 查看 test03.txt 的全部内容</span></span><br><span class="line"></span><br><span class="line">tac	(从下往上倒着查看广西内容)</span><br><span class="line">tac		test03.txt						<span class="comment"># 倒着查看 test03.txt 的全部内容</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看文件头几行"><a href="#查看文件头几行" class="headerlink" title="查看文件头几行"></a>查看文件头几行</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">head	</span><br><span class="line">head	test03.txt						<span class="comment"># 查看文件的前十行，默认</span></span><br><span class="line">head	-n	<span class="number">5</span>	test03.txt				<span class="comment"># 查看文件的前 5 行</span></span><br><span class="line">head	-<span class="number">5</span>	test03.txt					<span class="comment"># 查看文件的前 5 行</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查看文件倒数几行"><a href="#查看文件倒数几行" class="headerlink" title="查看文件倒数几行"></a>查看文件倒数几行</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tail	</span><br><span class="line">tail	test03.txt						<span class="comment"># 查看文件的倒数 10 行，（默认）</span></span><br><span class="line">tail	-n	<span class="number">5</span>	test03.txt				<span class="comment"># 查看文件的倒数 5 行</span></span><br><span class="line">tail	-<span class="number">5</span>	test03.txt					<span class="comment"># 查看文件的倒数 5 行</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># ip addr</span></span><br><span class="line"><span class="number">1</span>: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span class="number">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="number">1000</span></span><br><span class="line">    link/loopback <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> brd <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span></span><br><span class="line">    inet <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>/<span class="number">8</span> scope host lo</span><br><span class="line">       valid_lft forever preferred_lft forever</span><br><span class="line">    inet6 ::<span class="number">1</span>/<span class="number">128</span> scope host </span><br><span class="line">       valid_lft forever preferred_lft forever</span><br><span class="line"><span class="number">2</span>: ens33: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="number">1500</span> qdisc pfifo_fast state UP group default qlen <span class="number">1000</span></span><br><span class="line">    link/ether <span class="number">00</span>:0c:<span class="number">29</span>:ee:c1:7b brd ff:ff:ff:ff:ff:ff</span><br><span class="line">    inet <span class="number">10.0</span><span class="number">.0</span><span class="number">.3</span>/<span class="number">24</span> brd <span class="number">10.0</span><span class="number">.0</span><span class="number">.255</span> scope <span class="keyword">global</span> noprefixroute dynamic ens33</span><br><span class="line">       valid_lft 1624sec preferred_lft 1624sec</span><br><span class="line">    inet6 fe80::c5a0:75f9:d016:4b1c/<span class="number">64</span> scope link noprefixroute </span><br><span class="line">       valid_lft forever preferred_lft forever</span><br><span class="line"></span><br><span class="line">[root@localhost ~]<span class="comment"># ip addr | tail -4</span></span><br><span class="line">    inet <span class="number">10.0</span><span class="number">.0</span><span class="number">.3</span>/<span class="number">24</span> brd <span class="number">10.0</span><span class="number">.0</span><span class="number">.255</span> scope <span class="keyword">global</span> noprefixroute dynamic ens33</span><br><span class="line">       valid_lft 1248sec preferred_lft 1248sec</span><br><span class="line">    inet6 fe80::c5a0:75f9:d016:4b1c/<span class="number">64</span> scope link noprefixroute </span><br><span class="line">       valid_lft forever preferred_lft forever</span><br><span class="line"></span><br><span class="line">[root@localhost ~]<span class="comment"># ip addr | tail -4 | head -1</span></span><br><span class="line">    inet <span class="number">10.0</span><span class="number">.0</span><span class="number">.3</span>/<span class="number">24</span> brd <span class="number">10.0</span><span class="number">.0</span><span class="number">.255</span> scope <span class="keyword">global</span> noprefixroute dynamic ens33</span><br><span class="line"></span><br><span class="line">[root@localhost ~]<span class="comment"># ip addr | tail -4 | head -1 | cut -c 10-17</span></span><br><span class="line"><span class="number">10.0</span><span class="number">.0</span><span class="number">.3</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="3，目录结构"><a href="#3，目录结构" class="headerlink" title="3，目录结构"></a>3，目录结构</h2><p>相对路径：从所在目录开始</p>
+<p>绝对路径：从根开始</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">/<span class="built_in">bin</span>		<span class="comment"># 存放二进制的可执行文件，命令，		 特别重要，不能删除！</span></span><br><span class="line">/boot		<span class="comment"># 开机启动需要的文件，				特别重要，不能删除！</span></span><br><span class="line">/dev		<span class="comment"># device 设备文件。					特别重要，不能删除！</span></span><br><span class="line">/etc		<span class="comment"># 存放配置文件。					   特别重要，不能删除！</span></span><br><span class="line">/home		<span class="comment"># 普通用户的家目录					  </span></span><br><span class="line">/lib		<span class="comment"># library 32 位库，一般是so结尾。	  特别重要，不能删除！</span></span><br><span class="line">/lib64		<span class="comment"># library 64 位库，一般是so结尾。	   特别重要，不能删除！</span></span><br><span class="line">/media		<span class="comment"># 多媒体</span></span><br><span class="line">/mnt		<span class="comment"># mount 挂载光盘，U盘</span></span><br><span class="line">/opt		<span class="comment"># 部分软件安装存储目录</span></span><br><span class="line">/proc		<span class="comment"># process 进程，					  特别重要，不能删除！</span></span><br><span class="line">/root		<span class="comment"># root用户运行的时候产生的文件</span></span><br><span class="line">/sbin		<span class="comment"># super bin 趋势用户才能使用的命令。	 特别重要，不能删除！</span></span><br><span class="line">/srv		<span class="comment"># 源代码</span></span><br><span class="line">/sys		<span class="comment"># system 系统目录。					 特别重要，不能删除！</span></span><br><span class="line">/tmp		<span class="comment"># 用来存储临时文件的目录</span></span><br><span class="line">/usr		<span class="comment"># 用户级的目录。						特别重要，不能删除！</span></span><br><span class="line">/var		<span class="comment"># variable 变化的文件。				 特别重要，不能删除！</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="统计"><a href="#统计" class="headerlink" title="统计"></a>统计</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wc</span><br><span class="line">wc	-<span class="number">1</span>						<span class="comment"># 按行统计，不会单独使用，需要接在管道后面</span></span><br><span class="line">例如：</span><br><span class="line">cat	test03.txt	| wc -<span class="number">1</span></span><br><span class="line"></span><br><span class="line">cat -n test03.txt</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成数字序列"><a href="#生成数字序列" class="headerlink" title="生成数字序列"></a>生成数字序列</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">seq</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成一个 5 到 12 的序列</span></span><br><span class="line">seq <span class="number">5</span> <span class="number">12</span></span><br><span class="line">[root@localhost ~]<span class="comment"># seq 5 12</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="number">9</span></span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">11</span></span><br><span class="line"><span class="number">12</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成一个 5 到 12 的等宽序列</span></span><br><span class="line">seq -w <span class="number">5</span> <span class="number">12</span></span><br><span class="line">[root@localhost ~]<span class="comment"># seq -w 5 12</span></span><br><span class="line">05</span><br><span class="line">06</span><br><span class="line">07</span><br><span class="line">08</span><br><span class="line">09</span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">11</span></span><br><span class="line"><span class="number">12</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="过江字符串"><a href="#过江字符串" class="headerlink" title="过江字符串"></a>过江字符串</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">grep </span><br><span class="line"></span><br><span class="line"><span class="comment"># 普通过滤</span></span><br><span class="line">grep <span class="string">&#x27;3&#x27;</span> test03.txt</span><br><span class="line"><span class="comment"># 显示行号</span></span><br><span class="line">grep -n <span class="string">&#x27;3&#x27;</span> test03.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># grep 精准匹配</span></span><br><span class="line">[root@localhost ~]<span class="comment"># ip addr | grep &#x27;inet&#x27;</span></span><br><span class="line">    inet <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>/<span class="number">8</span> scope host lo</span><br><span class="line">    inet6 ::<span class="number">1</span>/<span class="number">128</span> scope host </span><br><span class="line">    inet <span class="number">10.0</span><span class="number">.0</span><span class="number">.3</span>/<span class="number">24</span> brd <span class="number">10.0</span><span class="number">.0</span><span class="number">.255</span> scope <span class="keyword">global</span> noprefixroute dynamic ens33</span><br><span class="line">    inet6 fe80::c5a0:75f9:d016:4b1c/<span class="number">64</span> scope link noprefixroute </span><br><span class="line"></span><br><span class="line">[root@localhost ~]<span class="comment"># ip addr | grep -w &#x27;inet&#x27;</span></span><br><span class="line">    inet <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>/<span class="number">8</span> scope host lo</span><br><span class="line">    inet <span class="number">10.0</span><span class="number">.0</span><span class="number">.3</span>/<span class="number">24</span> brd <span class="number">10.0</span><span class="number">.0</span><span class="number">.255</span> scope <span class="keyword">global</span> noprefixroute dynamic ens33</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="按列过滤"><a href="#按列过滤" class="headerlink" title="按列过滤"></a>按列过滤</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">awk</span><br><span class="line">test01.txt 的内容如下</span><br><span class="line">row <span class="number">1</span>, cell <span class="number">1</span>		row <span class="number">1</span>, cell <span class="number">2</span></span><br><span class="line">row <span class="number">2</span>, cell <span class="number">1</span>		row <span class="number">2</span>, cell <span class="number">2</span></span><br><span class="line"><span class="comment"># 取列，$1 代表第一列，$2 代表第二列， $NF 代表最后一列</span></span><br><span class="line"></span><br><span class="line">cat test01.txt</span><br><span class="line"></span><br><span class="line">awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> test01.txt</span><br><span class="line">row</span><br><span class="line">row</span><br><span class="line"></span><br><span class="line">awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> test01.txt</span><br><span class="line"><span class="number">1</span>,</span><br><span class="line"><span class="number">2</span>,</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以逗号为分隔符</span></span><br><span class="line">awk -F <span class="string">&#x27;,&#x27;</span> <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> test01.txt</span><br><span class="line">row <span class="number">1</span></span><br><span class="line">row <span class="number">2</span></span><br><span class="line"></span><br><span class="line">awk -F <span class="string">&#x27;,&#x27;</span> <span class="string">&#x27;&#123;print $NF&#125;&#x27;</span> test01.txt</span><br><span class="line">cell <span class="number">2</span></span><br><span class="line">cell <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat test02.txt | sort -n</span><br></pre></td></tr></table></figure>
+
+<h3 id="统计去重"><a href="#统计去重" class="headerlink" title="统计去重"></a>统计去重</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat test02.txt | sort -n | uniq -c</span><br></pre></td></tr></table></figure>
+
+<h2 id="用户和用户组管理"><a href="#用户和用户组管理" class="headerlink" title="用户和用户组管理"></a>用户和用户组管理</h2><h3 id="创建用户，设置用户组"><a href="#创建用户，设置用户组" class="headerlink" title="创建用户，设置用户组"></a>创建用户，设置用户组</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建用户</span></span><br><span class="line">useradd</span><br><span class="line"><span class="comment"># 创建一个用户</span></span><br><span class="line">useradd test1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建用户，并级用户指定用户组</span></span><br><span class="line">useradd -g test1 test3</span><br><span class="line"><span class="built_in">id</span> test3</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置密码"><a href="#设置密码" class="headerlink" title="设置密码"></a>设置密码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置密码</span></span><br><span class="line">passwd</span><br><span class="line"></span><br><span class="line">passwd test1</span><br><span class="line"><span class="comment"># 用 root 用户给普通用户修改密码</span></span><br><span class="line">[root@localhost ~]<span class="comment"># passwd test1</span></span><br><span class="line">更改用户 test1 的密码 。</span><br><span class="line">新的 密码：</span><br><span class="line">无效的密码： 密码少于 <span class="number">8</span> 个字符</span><br><span class="line">重新输入新的 密码：</span><br><span class="line">passwd：所有的身份验证令牌已经成功更新。</span><br><span class="line"></span><br><span class="line"><span class="comment"># 普通用户自己修改密码</span></span><br><span class="line">passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 免交互修改密码</span></span><br><span class="line">echo <span class="number">123456</span> | passwd --stdin test1</span><br></pre></td></tr></table></figure>
+
+<h3 id="检查用户是否存在"><a href="#检查用户是否存在" class="headerlink" title="检查用户是否存在"></a>检查用户是否存在</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">id</span></span><br><span class="line"><span class="comment"># 用户存在，系统的返回结果</span></span><br><span class="line">[root@localhost ~]<span class="comment"># id test1</span></span><br><span class="line">uid=<span class="number">1000</span>(test1) gid=<span class="number">1000</span>(test1) 组=<span class="number">1000</span>(test1)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 用户不存在，系统的返回结果</span></span><br><span class="line">[root@localhost ~]<span class="comment"># id test2</span></span><br><span class="line"><span class="built_in">id</span>: test2: no such user</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">userdel</span><br><span class="line"><span class="comment"># 被删除用户还在登录状态</span></span><br><span class="line">[root@localhost ~]<span class="comment"># userdel test1</span></span><br><span class="line">userdel: user test1 <span class="keyword">is</span> currently used by process <span class="number">2115</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 被删除用户，退出登录之后，可以正常删除</span></span><br><span class="line">[root@localhost ~]<span class="comment"># userdel test1</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="修改用户信息"><a href="#修改用户信息" class="headerlink" title="修改用户信息"></a>修改用户信息</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">usermode</span><br><span class="line"></span><br><span class="line"><span class="comment"># 锁定用户</span></span><br><span class="line">[root@localhost ~]<span class="comment"># usermod -L test1</span></span><br><span class="line">[root@localhost ~]<span class="comment"># lchage -l test1</span></span><br><span class="line">帐号被锁。</span><br><span class="line">至少:	<span class="number">0</span></span><br><span class="line">至多:	<span class="number">99999</span></span><br><span class="line">警告:	<span class="number">7</span></span><br><span class="line">不活跃：	从不</span><br><span class="line">最后一次改变：	<span class="number">2023</span>年05月09日</span><br><span class="line">密码过期：	从不</span><br><span class="line">密码不活跃：	从不</span><br><span class="line">帐号过期：	从不</span><br><span class="line"></span><br><span class="line"><span class="comment"># 禁止用户登录</span></span><br><span class="line">[root@localhost ~]<span class="comment"># usermod -s /sbin/nologin test2</span></span><br><span class="line">[root@localhost ~]<span class="comment"># grep -w &#x27;test2&#x27; /etc/passwd</span></span><br><span class="line">test2:x:<span class="number">1001</span>:<span class="number">1001</span>::/home/test2:/sbin/nologin</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2024/03/11/2024/技术分析学习的经典书籍推荐/" title="技术分析学习的经典书籍推荐">技术分析学习的经典书籍推荐</a></h2>
+                <p class="excerpt">
+                
+                果你想成为优秀的技术交易者，你需要阅读的书籍可能还需要更多，很多书虽然大部分内容都是废话，但核心思想或核心技术值得借鉴。我仅推荐我认为相对重要的书籍，这些书籍可以帮助你完成90%的技术和理念的需求，剩下的10%还需要您广泛阅读各类书籍。
+基础部分：这部分的书籍非常技术，很多内容早已过时，但是作为合格
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2024-03-11T10:56:18.000Z" class="post-list__meta--date date">2024-03-11</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
+</span><a class="btn-border-small" href="/2024/03/11/2024/技术分析学习的经典书籍推荐/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2023/02/14/2023/微软TTS文字转语音/" title="微软TTS文字转语音">微软TTS文字转语音</a></h2>
+                <p class="excerpt">
+                
+                第一步：油猴插件下载网址：https://www.tampermonkey.net/
+
+第二步：安装微软tts 插件网址：https://greasyfork.org/zh-CN/scripts/444347-azure-speech-download
+打开以上网址后，点击 “安装” 按钮
+
+安装后
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2023-02-13T16:49:26.000Z" class="post-list__meta--date date">2023-02-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>
+</span><a class="btn-border-small" href="/2023/02/14/2023/微软TTS文字转语音/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'lroyle'; 
+      
+  var disqus_identifier = '/2023/05/09/2023/Linux常规操作/';
+  var disqus_title = 'Linux 常规操作';
+  var disqus_url = 'http://liurong.love/2023/05/09/2023/Linux常规操作/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2025 lroyle - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://liurong.love ">@LIURONG</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?691552d8a51493e93d82164e4a98f26d";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Python爬虫笔记一 | LIURONG</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="做时间的朋友！">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Python爬虫笔记一 | LIURONG">
+    <meta name="twitter:description" content="做时间的朋友！">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Python爬虫笔记一 | LIURONG">
+    <meta property="og:description" content="做时间的朋友！">
+
+    
+    <meta name="author" content="lroyle">
+    
+    
+<link rel="stylesheet" href="/css/vno.css">
+
+    
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="LIURONG" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://liurong.love/2024/03/23/2024/Python%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+    
+<script src="/js/main.js"></script>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 LIURONG 的主页"><img src="/images/avatar.jpg" width="80" alt="LIURONG logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for LIURONG">LIURONG</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">面向大海 | 重新启航</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">做时间的朋友！</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">文字阁</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/about">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="https://weibo.com/lroyle" title="我的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/oneeno" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2024-03-23T05:47:00.000Z" class="post-list__meta--date date">2024-03-23</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="-none-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Python爬虫笔记一</h1>
+  </header>
+
+  <section class="post">
+    <h2 id="关于爬虫的特殊性"><a href="#关于爬虫的特殊性" class="headerlink" title="关于爬虫的特殊性"></a>关于爬虫的特殊性</h2><p>爬虫是一个很蛋疼的东西，可能今天可以爬的内容，明天就失效了。所以，不要死盯着一个网站干，要学会见招拆招（爬虫的灵魂）</p>
+<p>爬虫程序如果编写得不够完善，访问频率过高，很有可能会对服务器造成毁灭性打击，所以，不要死盯着一个网站干，请放慢你披取的速度。你好，网站也好。</p>
+<p>腾讯，阿里，字节的网站，反披手段很残忍，新手不要去挑战这种大厂。等有实力了，慢慢研究哪个（每个都要研究很久….)，而且它们的<strong>法务</strong>部更残忍。</p>
+<p>政府的网站，非必要，不要披取，非要披取，请一定要降低访问频率，为你好…</p>
+<p>不要以为政府的网站好欺负，那是地方性网站，中央很多重要网站都有非常强力的防护措施（瑞娄等…）这种，愿意搞的，自己研究</p>
+<p>网站的多变性，这个是披虫的魅力，我们要全主方位的去思考，就像找漏洞一样，思维逻辑不可能是固定的，达到目的即可，不要列磕，要不然，你会死得很惨…要会见招拆招。</p>
+<h3 id="必须要掌握的-Python-基础"><a href="#必须要掌握的-Python-基础" class="headerlink" title="必须要掌握的 Python 基础"></a>必须要掌握的 Python 基础</h3><h4 id="1，基础语法相关"><a href="#1，基础语法相关" class="headerlink" title="1，基础语法相关"></a>1，基础语法相关</h4><p>if 待件判断 </p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> 条件:</span><br><span class="line">	<span class="comment"># 内容</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="comment"># 内容</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="1，先看Python基础"><a href="#1，先看Python基础" class="headerlink" title="1，先看Python基础"></a>1，先看Python基础</h3><p><img src="/2024/03/23/2024/Python%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0%E4%B8%80/image-20240323135458932.png" alt="image-20240323135458932"></p>
+<h3 id="2，看完上面的基础后，就直接看六期"><a href="#2，看完上面的基础后，就直接看六期" class="headerlink" title="2，看完上面的基础后，就直接看六期"></a>2，看完上面的基础后，就直接看六期</h3><p>因为很多都已经过期了，后面的是最新的。</p>
+<p><img src="/2024/03/23/2024/Python%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0%E4%B8%80/image-20240323135627563.png" alt="image-20240323135627563"></p>
+<!--PC版-->
+
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cytzVhPgE',
+conf: 'prod_8bd7f12de9e89a0377b171df44ea99d6'
+});
+</script>
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2129161"></script>
+<!-- UY END -->
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2024/03/23/2024/Pycharm基础使用/" title="Pycharm基础使用">Pycharm基础使用</a></h2>
+                <p class="excerpt">
+                
+                安装完 PyCharm 后，新建项目
+
+修改工程的路径，
+
+改变系统的全局环境，不要使用上面的虚拟环境，以免自己安装的包使用不了
+
+添加系统全局环境，然后点确定
+
+
+
+
+
+
+window.changyan.api.config({
+appid: &#39;cytzVhPgE&#39;,
+conf: &#39;prod_8b
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2024-03-23T07:17:04.000Z" class="post-list__meta--date date">2024-03-23</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/pycharm/" rel="tag">pycharm</a>
+</span><a class="btn-border-small" href="/2024/03/23/2024/Pycharm基础使用/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2024/03/20/交易/机构订单原理笔记三/" title="机构订单原理笔记三">机构订单原理笔记三</a></h2>
+                <p class="excerpt">
+                
+                关于指标用法，必须树立的几个大局观
+指标是衍生品，是 K 线数据的2次开发
+不要迷信指标：一般来说，指标本身就分两类
+趋势类
+均线
+MACD
+布林带
+
+
+反转类   （比如：RSI（相对强弱）
+震荡类
+，KDJ（超买）
+WILLIAM R 超卖
+
+
+
+
+
+行情就分三类
+多头
+空头
+震荡
+
+
+假如日线
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2024-03-20T03:43:42.000Z" class="post-list__meta--date date">2024-03-20</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
+</span><a class="btn-border-small" href="/2024/03/20/交易/机构订单原理笔记三/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'lroyle'; 
+      
+  var disqus_identifier = '/2024/03/23/2024/Python爬虫笔记一/';
+  var disqus_title = 'Python爬虫笔记一';
+  var disqus_url = 'http://liurong.love/2024/03/23/2024/Python爬虫笔记一/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2025 lroyle - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://liurong.love ">@LIURONG</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?691552d8a51493e93d82164e4a98f26d";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
