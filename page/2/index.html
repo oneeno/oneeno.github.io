@@ -85,6 +85,10 @@
             
               <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
             
+              <li class="navigation__item"><a href="/categories">分类</a></li>
+            
+              <li class="navigation__item"><a href="/tags">标签云</a></li>
+            
               <li class="navigation__item"><a href="/about">关于我</a></li>
             
             </ul>
@@ -158,211 +162,177 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/09/网络安全/Linux/Linux基础/wl_009_Linux_文件传输/" title="link to post.title">文件传输</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/网络/TCPDump抓包/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      和 Linux 进行文件传输，大概有下面几种情况。
-
-1、网站下载文件下载文件1234567891011121314151617181920curl例子1：curl	-o	本地存放路径	文件网址例如：有些网站在后台可能禁了curl下载，导致下载不下来。curl -o 123.zip https://codeload.github.com/wxWidgets/wxWidgets/zip/refs/h
+      tcpdump 抓包这个工具抓到的数据可以交给wireshark进行分析。
+tcpcump 是 linux 上的一个轻量级的抓包工具。支持针对网络层，协议，主机，网络或端口的过滤，并提供 and、or、not等逻辑语句来帮助你去掉无用的信息。
+tcpdump 只能抓取流经本机的数据包，一般有三个参数。比如指定地址，指定协议，或者指定网卡。
+安装 nginx12345678yum install e
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-09T14:39:45.000Z" class="post-list__meta--date date">2024-05-09</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/09/网络安全/Linux/Linux基础/wl_009_Linux_文件传输/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2025-02-25T08:58:04.182Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/网络/TCPDump抓包/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/08/网络安全/Linux/Linux基础/wl_008_Linux_压缩打包/" title="link to post.title">Linux压缩打包</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/网络/Linux_修改静态IP/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      1、tar压缩文件有时候我们也叫做归档文件。但是归档和压缩有一些区别，归档只是将多个文件捆绑成一个文件，并没有压缩，而压缩才是将大小压缩得更小。
-Linux最常用的压缩和解压指令如下：
-123456789101112131415161718192021222324252627282930313233343536373839404142434445tar:	能够解压的文件格式是：xx.tar.gz	
+      Linux 修改静态IP修改网卡
+1234567[root@localhost ~]# cd /etc/sysconfig/network-scripts/     # 网卡位置[root@localhost network-scripts]# lsifcfg-ens33  ifdown-ib    ifdown-ppp       ifdown-tunnel  ifup-ib    ifup-p
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-08T14:39:45.000Z" class="post-list__meta--date date">2024-05-08</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/08/网络安全/Linux/Linux基础/wl_008_Linux_压缩打包/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2025-02-25T08:58:04.173Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/网络/Linux_修改静态IP/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/07/网络安全/Linux/Linux基础/wl_007_Linux_输入输出重定向/" title="link to post.title">Linux输入输出重定向</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/web/002_nginx进阶学习/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      输入输出只能对文件进行操作，不能对目录操作
-输出12345678910111213141516171819&amp;gt; 	输出重定向，将命令执行结果不输出到屏幕上，输出到文件里，会清空源文件，所以输出的时候一定要注意，文件名称要看好了。[root@lroyle 17:03:50 ~]#head -20 services &amp;gt; 2.txt		# 将 services 文件的前20行保存到 2.txt
+      nginx 进阶学习nginx 多站点配置一个 nginx 上可以运行多个网站，有多种方式：
+12http:// + ip/域名 + 端口 + URI其中， ip/域名变了，那么网站入口就变了，端口变了，网站入口也变了，而每个网站都需要有自己的入口
+
+方式一：多端口12345678910111213141516171819202122232425262728293031323334353637[r
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-07T14:39:45.000Z" class="post-list__meta--date date">2024-05-07</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/07/网络安全/Linux/Linux基础/wl_007_Linux_输入输出重定向/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2025-02-25T08:58:03.994Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/web/002_nginx进阶学习/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/06/网络安全/Linux/Linux基础/wl_006_Linux_vivim编辑器/" title="link to post.title">vi / vim 编辑器</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/web/001_nginx安装/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      vi和vim的快捷键是通用的，系统默认安装的是 vi ,
-vim 需要自己安装，它是加强版的 vi
-123[root@lroyle 23:48:31 ~]#cp /etc/services  .		# 。 表示当前目录[root@lroyle 23:52:18 ~]#vim services :set number 	# 显示行号
+      nginx 安装先修改下主机名，方便记忆
+1hostnamectl set-hostname web01
 
-1，移动光标左、下、上、右，如果键盘上没有上下左右键，可以 h、
+1, 使用epel源安装1234567# yum repolist  # 查看当前系统的 yum 仓库有哪些软件包yum install epel-release -y       # 安装 yum 的扩展包yum install nginx -ysystemctl start nginx.
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-06T14:39:45.000Z" class="post-list__meta--date date">2024-05-06</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/06/网络安全/Linux/Linux基础/wl_006_Linux_vivim编辑器/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2025-02-25T08:58:03.991Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/web/001_nginx安装/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/05/网络安全/Linux/Linux基础/wl_005_Linux_Shell/" title="link to post.title">Linux Shell</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2025/01/30/交易/专业谐波形态/" title="link to post.title">专业谐波形态</a></h2>
       <p class="excerpt">
     
-      1、Shell 的意思Shell：蛋壳的意思，是Linux中比较重要的一个概念，所有的命令其实都称之为shell命令。
-看图解：Shell 就是内核的一个外壳，用户通过Shell 来控制内核进而驱动硬件做事情，这是它名字的由来，Linux下，没有Shell的话，就不能控制这个计算机了，因为内核是用户不能直接控制的。
+      未算胜，先算败！
+一定要做止损，盈利2：1一定要平一半。
+单边上升，使用 孕线，吞没形态，PinBar 找入场点做多。
+1，交易原理蜡烛图的分类
 
-查看使用的是哪个shell
-123456# 在/etc/passwd中可以看到[
+2，理解市场（技术分析的基石——结构）通过结构寻找关键K线。
+先有胜率，再有交易系统，最后才是赚钱
+仔细观察过去图表，我们会发现价格经常在同一“水平”位置停留多次，并非常尊重这一区域，这一区域的表现形式常为K线图上密集成交区和拐点周围。
+结构示意图
+结
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-05T14:39:45.000Z" class="post-list__meta--date date">2024-05-05</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/05/网络安全/Linux/Linux基础/wl_005_Linux_Shell/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2025-01-30T07:28:44.000Z" class="post-list__meta--date date">2025-01-30</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
+</span><a class="btn-border-small" href="/2025/01/30/交易/专业谐波形态/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/04/网络安全/Linux/Linux基础/wl_004_Linux仅限管理/" title="link to post.title">Linux 权限管理</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/09/13/2024/日常学习安排/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      1、权限介绍和示例root 用户权限最高，其它用户需要设定权限并遵守权限
-1234567891011[root@localhost ~]# ls -l /tmp/123.txt-rw-r--r-- 1 root root 0 5月   6 12:54 /tmp/123.txt# 第一段的第一个字符，表示文件类型 -文件、d目录，l软连接（对应着windows快捷方式），b块设备（ls /dev，可
+      根据你的实际情况，我建议你可以使用时间块管理法来合理安排每天的任务，确保重点任务得到充分时间，次要任务也能有序进行。以下是一个合理的时间安排和学习计划示例：
+每日时间安排
+08:00 - 09:00：早晨准备与休息
+起床、早餐、简单放松，准备迎接新的一天。
+
+
+09:00 - 11:00：网络安全学习（重点任务）
+学习视频教程，做笔记并完成相关练习。保持全程专注，避免多任务干扰。
+
+
+11:00 
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-04T14:39:45.000Z" class="post-list__meta--date date">2024-05-04</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/04/网络安全/Linux/Linux基础/wl_004_Linux仅限管理/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-09-13T08:26:16.218Z" class="post-list__meta--date date">2024-09-13</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/09/13/2024/日常学习安排/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/03/网络安全/Linux/Linux基础/wl_002_Linux基础操作/" title="link to post.title">Linux 基础操作</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/08/06/2024/六种不易察觉的洗脑方式/" title="link to post.title">六种不易察觉的洗脑方式</a></h2>
       <p class="excerpt">
     
-      登录系统先输入用户名：root，再输入密码：123456，输入密码时，是不显示密码的。
-下面是输错密码的结果
-
-下面是输入正确密码的结果
-
-输入 logout 指令，按回车，可以退出登录
-
-退出后，回到登录界面
-
-使用远程连接工具连接控制系统使用系统自带的ssh工具，可以连接这个 CentOS系统，前提条件是需要知道CentOS的IP地址，
-查看IP 地址 ip addr
-如下：我的IP地址是 1
+      1，捧杀
+拍马屁就是最简单，最高效的流脑方式。
+只要说对你有利的话，你就会更倾向于认为他说的是对的，这就是人性当中最大的缺陷。
+当我想毁掉一个人的时候，我会无限制的捧他。他被捧得越高，摔下来的时候也就越惨。
+捧杀在职场中，尤为常见。
+2，让利
+“利大促销”、”亏本大甩卖“、”跳楼价“、”领券返现“。
+为什么这样的官传方式经久不衰？不为别的，就因为买东西的人，永远都想占便宜。
+而且卖方和买方始终都存
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-03T14:39:45.000Z" class="post-list__meta--date date">2024-05-03</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/03/网络安全/Linux/Linux基础/wl_002_Linux基础操作/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-08-06T04:35:08.000Z" class="post-list__meta--date date">2024-08-06</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%80%9D%E7%BB%B4/" rel="tag">思维</a>
+</span><a class="btn-border-small" href="/2024/08/06/2024/六种不易察觉的洗脑方式/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/03/网络安全/Linux/Linux基础/wl_003_Linux用户和用户组管理/" title="link to post.title">用户和用户组管理</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/08/05/2024/正确的生活状态/" title="link to post.title">正确的生活状态</a></h2>
       <p class="excerpt">
     
-      1，用户管理创建用户
-123useradd# 创建一个用户useradd test1
-
-设置密码
-远程 SSH 连接是需要密码的，所以想让某个用户登录系统，必须设置密码
-12passwdpasswd test1
-
-
-普通用户自己修改密码
-1passwd  	# 给当前登录用户修改密码，root用户修改密码不需要输入旧密码，普通用户需要输入旧密码
-
-
-一般Linux的密码是有复杂度要求的，比如下面这
+      正确的生活状态1，除了生病以外，你感受到的所有痛苦，都是价值观带来的。看了这句话豁然开朗。
+2，就算公交车上空无一人，司机也会把车开到终点站，我的意思是：你不要因为任何人的离开，而停止原本的生活。
+3，当你真正被爱的时候，其实根本不用那么漂亮，那么迎合，那么优秀，真正喜欢你的人是会弯腰的。
+4，结婚是为了幸福，离婚也是，不随便结婚也是！
+5，一个人最好的状态，是该看书时看书，该玩时尽情玩，看见优秀
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-03T14:39:45.000Z" class="post-list__meta--date date">2024-05-03</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/03/网络安全/Linux/Linux基础/wl_003_Linux用户和用户组管理/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-08-05T02:47:00.000Z" class="post-list__meta--date date">2024-08-05</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%88%90%E9%95%BF/" rel="tag">成长</a>
+</span><a class="btn-border-small" href="/2024/08/05/2024/正确的生活状态/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/02/网络安全/Linux/Linux基础/wl_001_安装Centos/" title="link to post.title">安装Linux</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/07/30/2024/自媒体操作指南/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      1, 选择第一个
-2， 选择语言
-3， 安装盘符设置
-4， 选择我要配置分区
-
-选择标准分区
-
-分区设置
-
-然后点完成
-
-点接受更改
-
-3 关掉keydump 功能
-把禁用keydump 前面的勾去掉
-
-开启连网功能
-打开以太网的按钮
-
-5 安装常用软件
-勾选常用的3个，如下图
-
-点开始安装
-
-创建密码
-
-
-
+      自媒体操作指南一、制作文章的两种AI工具1，文心一言，豆包 ——&amp;gt; 免费（任何赛道都可以写）社会热点类文章只能AI 仿写复制别人的文章，然后使用下面的指令进行改写，改写完后，检测相似度，原创度没有那么高，需要反复修改。
+社会新闻
+1我将给你一篇自媒体社会新闻文章，请你重新改写，要求不得改变原文意思，不得改变人物名称，不得与原文章相似度超过10%，字数不低于600字，用词通俗易懂且带有一定观点
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-02T14:39:45.000Z" class="post-list__meta--date date">2024-05-02</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/02/网络安全/Linux/Linux基础/wl_001_安装Centos/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-07-30T05:30:40.922Z" class="post-list__meta--date date">2024-07-30</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/07/30/2024/自媒体操作指南/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/04/30/网络安全/Windows/w_008_Windows指令操作/" title="link to post.title"></a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/07/06/2024/国内卖币走资思路/" title="link to post.title">国内卖币走资思路</a></h2>
       <p class="excerpt">
     
-      Windows指令操作对操作系统进行控制时，除了图形化界面的操作外，还可以使用系统指令来操作。
-1，指令操作界面Win+R,打开运行，输入 cmd，确定，就可以打开终端面板
-
-上面的黑窗口，就是指令执行窗口，
-2，常用指令和解释面板操作
-12exit		退出 cmd 面板cls			清除 cmd 面板上的历史记录
-
-文件和目录操作
-1234567指令 /?		可以查看指令的具体参数和对应能力。比如
+      国内卖币走资思路小额U卡、虚拟卡线上消费，包括微信、支付宝、美团、携程、淘宝等都可以用。
+实体卡取现金和Pos机刷卡，每天6000人民币一个月18万人币
+大额1，OTC 出金到格鲁吉亚账户，再存入到新加坡、美国、英属直布罗陀、开曼等。
+2，hashkey、Kraken等交易所官方美元提现到你的境外账户
+U卡XAPO（直布罗陀）资质最好但是现在不允许大陆身份注册。
+Dupay，实际费率2%，大陆人民
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-04-30T15:49:18.834Z" class="post-list__meta--date date">2024-04-30</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/04/30/网络安全/Windows/w_008_Windows指令操作/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-07-06T11:19:06.000Z" class="post-list__meta--date date">2024-07-06</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E5%B8%81%E5%9C%88/" rel="tag">币圈</a>
+</span><a class="btn-border-small" href="/2024/07/06/2024/国内卖币走资思路/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
@@ -374,7 +344,7 @@ vim 需要自己安装，它是加强版的 vi
     
       <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/#blog">&larr; 最近</a>
     
-    <span class="pagination__page-number" >  2 / 11 </span>
+    <span class="pagination__page-number" >  2 / 12 </span>
     
       <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/3/">更早 &rarr;</a>
     

@@ -85,6 +85,10 @@
             
               <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
             
+              <li class="navigation__item"><a href="/categories">分类</a></li>
+            
+              <li class="navigation__item"><a href="/tags">标签云</a></li>
+            
               <li class="navigation__item"><a href="/about">关于我</a></li>
             
             </ul>
@@ -158,269 +162,199 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/04/18/2024/Mitmproxy简易教程/" title="link to post.title">mitmproxy教程</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/05/03/网络安全/Linux/Linux基础/wl_002_Linux基础操作/" title="link to post.title">Linux 基础操作</a></h2>
       <p class="excerpt">
     
-      
+      登录系统先输入用户名：root，再输入密码：123456，输入密码时，是不显示密码的。
+下面是输错密码的结果
 
+下面是输入正确密码的结果
 
-查看方式
-查看指令
-说明
+输入 logout 指令，按回车，可以退出登录
 
+退出后，回到登录界面
 
-
-生成静态HTML
-python -m pydoc -w mitmproxy.net.http  python -m pydoc -w mitmproxy.coretypes.multidict
-默认生成到当前目录
-
-
-查看在线文档
-python -m pydoc -p 55555
-如果 55555 端口被占用（可修改），启动 55555 端口成功后，访问 mi
+使用远程连接工具连接控制系统使用系统自带的ssh工具，可以连接这个 CentOS系统，前提条件是需要知道CentOS的IP地址，
+查看IP 地址 ip addr
+如下：我的IP地址是 1
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-04-18T05:17:34.000Z" class="post-list__meta--date date">2024-04-18</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/python/" rel="tag">python</a>
-</span><a class="btn-border-small" href="/2024/04/18/2024/Mitmproxy简易教程/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-05-03T14:39:45.000Z" class="post-list__meta--date date">2024-05-03</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
+</span><a class="btn-border-small" href="/2024/05/03/网络安全/Linux/Linux基础/wl_002_Linux基础操作/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/04/09/2024/正则表达式/" title="link to post.title">正则基础</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/05/03/网络安全/Linux/Linux基础/wl_003_Linux用户和用户组管理/" title="link to post.title">用户和用户组管理</a></h2>
       <p class="excerpt">
     
-      一、正则基础1、为什么使用正则
-需求
-判断一个字符串是否是手机号
+      1，用户管理创建用户
+123useradd# 创建一个用户useradd test1
 
-解决
-编写一个函数，给函数一个字符串，如果是手机号则返回True，否则返回False
+设置密码
+远程 SSH 连接是需要密码的，所以想让某个用户登录系统，必须设置密码
+12passwdpasswd test1
 
-代码
-12345678910def isPhone(phone):    # 长度为11    # 全部都是数字字符    # 以1开头    passif isPhone(&amp;quot;13812345678&amp;quot;):    print(
+
+普通用户自己修改密码
+1passwd  	# 给当前登录用户修改密码，root用户修改密码不需要输入旧密码，普通用户需要输入旧密码
+
+
+一般Linux的密码是有复杂度要求的，比如下面这
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-04-09T12:03:49.000Z" class="post-list__meta--date date">2024-04-09</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Python/" rel="tag">Python</a>
-</span><a class="btn-border-small" href="/2024/04/09/2024/正则表达式/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-05-03T14:39:45.000Z" class="post-list__meta--date date">2024-05-03</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
+</span><a class="btn-border-small" href="/2024/05/03/网络安全/Linux/Linux基础/wl_003_Linux用户和用户组管理/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/04/05/交易/机构订单练习/" title="link to post.title">机构订单练习</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/05/02/网络安全/Linux/Linux基础/wl_001_安装Centos/" title="link to post.title">安装Linux</a></h2>
       <p class="excerpt">
     
-      交易基础
-风险管理
-交易处理
-市场和交易知识
-执行力
-交易心理
-自信
-经验
+      1, 选择第一个
+2， 选择语言
+3， 安装盘符设置
+4， 选择我要配置分区
 
-以上七点除了执行力，其它都可以通过学习而得到。但是上面七条都是建立在有一个核心策略的基础之上，否则，就是空谈。
-任何投资交易 策略都包含3个重要因素
+选择标准分区
 
-几率
-风险
-杠杆
+分区设置
 
-核心策略
-有效杠杆不要超过本金的10倍
-一次交易的损失不要超过本金的1%-2%
-如果一天交易的损失超过本金的5%，停止当天交易
+然后点完成
 
-时间级别现货  ３０
+点接受更改
+
+3 关掉keydump 功能
+把禁用keydump 前面的勾去掉
+
+开启连网功能
+打开以太网的按钮
+
+5 安装常用软件
+勾选常用的3个，如下图
+
+点开始安装
+
+创建密码
+
+
+
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-04-05T14:39:45.000Z" class="post-list__meta--date date">2024-04-05</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
-</span><a class="btn-border-small" href="/2024/04/05/交易/机构订单练习/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-05-02T14:39:45.000Z" class="post-list__meta--date date">2024-05-02</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
+</span><a class="btn-border-small" href="/2024/05/02/网络安全/Linux/Linux基础/wl_001_安装Centos/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/04/05/2024/如何参与加密货币市场的牛市/" title="link to post.title">如何参与加密货币市场的牛市</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/04/30/网络安全/Windows/w_008_Windows指令操作/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      牛市的客观标志是什么无论是小时线、日线、周线都始终在进行上涨趋势和下跌趋势的反复循环，因此，只要有足够的耐心等到周线级别的上升趋势，就是所谓的牛市了。
+      Windows指令操作对操作系统进行控制时，除了图形化界面的操作外，还可以使用系统指令来操作。
+1，指令操作界面Win+R,打开运行，输入 cmd，确定，就可以打开终端面板
 
+上面的黑窗口，就是指令执行窗口，
+2，常用指令和解释面板操作
+12exit		退出 cmd 面板cls			清除 cmd 面板上的历史记录
 
-
-
-
-window.changyan.api.config({
-appid: &#39;cytzVhPgE&#39;,
-conf: &#39;prod_8bd7f12de9e89a0377b171df44ea99d6&#39;
-});
-
-
-
-
-
-
+文件和目录操作
+1234567指令 /?		可以查看指令的具体参数和对应能力。比如
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-04-05T09:35:30.000Z" class="post-list__meta--date date">2024-04-05</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
-</span><a class="btn-border-small" href="/2024/04/05/2024/如何参与加密货币市场的牛市/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-04-30T15:49:18.834Z" class="post-list__meta--date date">2024-04-30</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/04/30/网络安全/Windows/w_008_Windows指令操作/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/04/03/2024/读《超越不可能》/" title="link to post.title">读《跨越不可能》</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/04/30/网络安全/Windows/w_007_Windows用户和用户组/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      
-如果你认为你可以，你就可以；如果你认为你不行，你就不行。
+      Windows用户和用户组1，定义用户：用户是登录系统的身份凭证
+用户组：一个系统可以有多个用户，为了方便管理这些用户，给多个用户统一分配操作权限等设置，可以将多个用户划分为一个组，给这个组做一些配置，那么，在这个用户组中的用户都会按照组配置来设定自己的操作。一个用户可以属于多个组，会同时继承多个组的操作权限，并且用户的权限其它还可以单独设定，甚至超过所属组的权限。
+2，用户操作2.1 新建用户
 
-如果你的思维是固定型的，意味着你相信天赋是与生俱来的，再多的练习也不会帮助你提升；如果你的思维是成长型的，意味着你相信天赋只是一个起点，练习会让一切变得不同。因此，要挑战不可能，那么“成长型思维”是必不可少的，没有它就没有持续学习与成长的动力。
-我们每个人的能力是没有边界的，很多时候是我们自己限制了自己的能力；而能力实际上是因需求而产生
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-04-03T14:05:06.000Z" class="post-list__meta--date date">2024-04-03</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="tag">读书笔记</a>
-</span><a class="btn-border-small" href="/2024/04/03/2024/读《超越不可能》/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-04-30T15:11:57.123Z" class="post-list__meta--date date">2024-04-30</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/04/30/网络安全/Windows/w_007_Windows用户和用户组/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/03/29/交易/机构订单原理/" title="link to post.title">机构订单原理</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/04/30/网络安全/Windows/w_006_计划任务/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      计算1234入场 - 止损 = 止损距离 = 0.57计算做 1 手 波动的距离，亏多少?开仓多少手 = 5 USDT / 0。57 = 8.77 手单次亏损上限 = （本金 * 0。02） / 第二步的结果
-
-图表 K 线
-
-
-K线所代表的是市场中已成效的订单常规定义K线反映的是某一时间周期内价格的变化；其中竖轴代表价格波动，横轴代表时间的变化。
-交易员对K线的定义K 线反映的是在某一时间周期内
+      计划任务1，定义计划任务是系统常见功能，利用计划任务功能，可以将任何脚本、程序或文档安排在某个最方便的时间运行。计划任务在每次系统启动时自动启动并在后台运行。当我们需要在服务器上定时执行一些重复性的事件时使用。可以通过计划任务来运行准备好的脚本，批处理文件夹、程序或命令，在某个特定的时间运行。
+比如你的电脑在某个时间点经常会弹出一些广告，这种广告行为，好多都是通过计划任务来实现定时弹出的。
+2，计
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-03-29T13:34:57.000Z" class="post-list__meta--date date">2024-03-29</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
-</span><a class="btn-border-small" href="/2024/03/29/交易/机构订单原理/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-04-30T14:33:07.105Z" class="post-list__meta--date date">2024-04-30</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/04/30/网络安全/Windows/w_006_计划任务/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/03/28/2024/读《程序员修炼手册》/" title="link to post.title">读《程序员修炼手册》</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/04/30/网络安全/Windows/w_005_Windows服务/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      一、学会观察这个世界当你走向社会的时候，不要太过于相信他人（包括网络上的软文，机构等）的说法。不要把自己当成学生或者说自己还是个孩子，不要把自己的将来交给别人，学会用自己的眼球去观察，去了解这个世界。
-网络上的一些所谓的新闻，或者鸡汤文有可能是枪手写的，不必太过较真。在学英语方法，有国外背景的教程或者课程，未必真正适合自己，适合自己的才是最好的。
-如果不知道自己未来的方向，可以通过一些招聘网站上查
+      Windows服务1，服务的概念下面以京东App为例，简单解释了客户端与服务端的概念
+
+客户端享受服务，服务端提供服务。
+提供服务的一方的程序是不能停下来的，客户端什么时候想使用服务，什么时候打开程序即可。
+2，Windows服务2.1 概念Microsoft Windows服务（即，以前的NT服务）使你能够创建在它们自己的Windows会话中可长时间运行的可执行应用程序，这些服务可以在计算机启动
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-03-28T07:05:06.000Z" class="post-list__meta--date date">2024-03-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%88%90%E9%95%BF/" rel="tag">成长</a>
-</span><a class="btn-border-small" href="/2024/03/28/2024/读《程序员修炼手册》/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-04-30T13:33:17.772Z" class="post-list__meta--date date">2024-04-30</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/04/30/网络安全/Windows/w_005_Windows服务/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/03/27/交易/吞没形态/" title="link to post.title">吞没形态</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/04/30/网络安全/Windows/w_004_Windows安全组策略/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      吞没形态蜡烛图一共分三大类
-
-趋势延续类
-
-大阴线  连续不断上涨（可以有引线，如果没有引线，力度更强）
-
-
-
-大阴线  连续不断下跌（可以有引线，如果没有引线，力度更强）
-
-
-
-
-趋势反转类
-
-Pin Bar (前提条件是前面有一段长期下跌）)，暗示之前的趋势由跌转涨，或者由涨转跌
-
-上引线必须得短
-引线占整个K线的三分之二
-
-
-
-吞没（颜色一定要相反），吞没不比影线，只比实体（吞没要长阳，大阳
+      Windows安全组策略1，定义12345百度百科：组策略（英语：Group Policy）是微软Windows NT家族操作系统的一个特性，它可以控制用户帐户和计算机帐户的工作环境。组策略提供了操作系统、应用程序和活动目录中用户设置的集中化管理和配置。组策略的其中一个版本名为本地组策略（缩写“LGPO”或“LocalGPO”），这可以在独立且非域的计算机上管理组策略对象。通俗解释：组策略是一组策
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-03-27T07:35:08.000Z" class="post-list__meta--date date">2024-03-27</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
-</span><a class="btn-border-small" href="/2024/03/27/交易/吞没形态/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-04-30T11:53:06.029Z" class="post-list__meta--date date">2024-04-30</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/04/30/网络安全/Windows/w_004_Windows安全组策略/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/03/26/交易/PinBar详解/" title="link to post.title">PinBar入门</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/04/29/网络安全/Windows/w_003_Windows注册表/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      Pin Bar 详解实体短，尾巴长，尾巴占比 2&amp;#x2F;3，就称之为 Pin Bar
-
-Pin Bar 的左边一定要有
-强支撑：
-
-大级别的拐点
-大级别的需求区
-重要的水平支撑位
-
-
-Pin Bar 形成后，三个入场方式
-
-下一根一开盘就直接做
-等价格回踩至整个下影线的一半位置再做
-向上突破 Pin Bar 的最高点之后，再做
-
-如果孕线和Pin Bar 同时出现，成功率更高
-
-下面这种图形，
+      Windows 注册表1，定义123Windows操作系统称之为登录档案，是Microsoft windows中的一个重要的数据库，注册表是Windows操作系统中的一个核心数据库，其中存放着各种参数，直接控制着Windows的启动、硬件驱动程序的装载以及一些Windows应用程序的运行，从而在整个系统中起着核心作用。这些作用包括了软、硬件的相关配置和状态信息。比如：注册表中保存有应用程序和资源管
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-03-26T09:44:02.000Z" class="post-list__meta--date date">2024-03-26</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
-</span><a class="btn-border-small" href="/2024/03/26/交易/PinBar详解/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-04-29T14:18:27.577Z" class="post-list__meta--date date">2024-04-29</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/04/29/网络安全/Windows/w_003_Windows注册表/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/03/24/交易/孕线的规则/" title="link to post.title">孕线的规则</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2024/04/28/网络安全/Windows/w002_Windows基础操作/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
-      孕线的规则孕线的定义及原理
-母线如果是十字星的话，上下影线要非常长才行。
+      Windows 基础操作dll 文件dll 文件是应用程序扩展文件
 
-母线不看实体大小，只比高低点，只要母线大，子线小，就是标准的孕线。
-只比高低点，不比实体。
-
-等待第三根蜡烛突破子线的高点，做多
-如果突破子线的低点，就做空
-先突破哪边，做哪边。
-
-如果是多头趋势，只做上破。
-如果是空头趋势，只做下破。
-如果里面包含多要K线，只根据最后突破的K线做
-
-止损放在子线下面。
-
-以损定量，用止损
+dll文件，学名是动态链接库（Dynamic Link library），DLL是一个包含可由多个程序，同时使用的代码和数据的库。
+通过dll文件封闭一些公用的程序代码，其它程序想用这个功能，直接加载这个 dll 链接库文件即可。
+图标文件桌面快捷方式等大多数软件自带的图标效果，里面的图标文件是 .ico 结尾。
+查看图标文件和
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-03-24T12:03:49.000Z" class="post-list__meta--date date">2024-03-24</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
-</span><a class="btn-border-small" href="/2024/03/24/交易/孕线的规则/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2024-04-28T15:14:49.047Z" class="post-list__meta--date date">2024-04-28</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2024/04/28/网络安全/Windows/w002_Windows基础操作/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
@@ -432,7 +366,7 @@ Pin Bar 形成后，三个入场方式
     
       <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/page/3/">&larr; 最近</a>
     
-    <span class="pagination__page-number" >  4 / 11 </span>
+    <span class="pagination__page-number" >  4 / 12 </span>
     
       <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/5/">更早 &rarr;</a>
     

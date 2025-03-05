@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>LIURONG | 面向大海 | 重新启航</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="做时间的朋友！">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="LIURONG | 面向大海 | 重新启航">
+    <meta name="twitter:description" content="做时间的朋友！">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="LIURONG | 面向大海 | 重新启航">
+    <meta property="og:description" content="做时间的朋友！">
+
+    
+    <meta name="author" content="lroyle">
+    
+    
+<link rel="stylesheet" href="/css/vno.css">
+
+    
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="LIURONG" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://liurong.love/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/001_nginx%E5%AE%89%E8%A3%85/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+    
+<script src="/js/main.js"></script>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 LIURONG 的主页"><img src="/images/avatar.jpg" width="80" alt="LIURONG logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for LIURONG">LIURONG</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">面向大海 | 重新启航</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">做时间的朋友！</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">文字阁</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/categories">分类</a></li>
+            
+              <li class="navigation__item"><a href="/tags">标签云</a></li>
+            
+              <li class="navigation__item"><a href="/about">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="https://weibo.com/lroyle" title="我的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/oneeno" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2025-02-25T08:58:03.991Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <h1 id="nginx-安装"><a href="#nginx-安装" class="headerlink" title="nginx 安装"></a>nginx 安装</h1><p>先修改下主机名，方便记忆</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostnamectl set-hostname web01</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-使用epel源安装"><a href="#1-使用epel源安装" class="headerlink" title="1, 使用epel源安装"></a>1, 使用epel源安装</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum repolist  # 查看当前系统的 yum 仓库有哪些软件包</span></span><br><span class="line">yum install epel-release -y       <span class="comment"># 安装 yum 的扩展包</span></span><br><span class="line">yum install nginx -y</span><br><span class="line">systemctl start nginx.service</span><br><span class="line">systemctl <span class="built_in">enable</span> nginx.service</span><br><span class="line"><span class="comment"># netstat -lntup		         # 查看端口占用情况</span></span><br><span class="line"><span class="comment"># 可以看到 nginx 默认占用了 80 端口</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装完之后，如果继续安装一个apache 的httpd，还是可以安装上的，</span></span><br><span class="line">yum install httpd -y</span><br><span class="line"><span class="comment"># 但是启动 httpd 时会报错，</span></span><br><span class="line">systemctl start httpd</span><br><span class="line"><span class="comment"># 查看它的状态</span></span><br><span class="line">systemctl status httpd          <span class="comment"># 可以看到启动失败</span></span><br></pre></td></tr></table></figure>
+
+<p>不能监听 80 端口，因为已经被 80 端口给占用了，所以一旦 80 端口被某个其它服务占用了，那么就不能以 80 端口来启动其它服务，所以想要启动其它服务，就要改服务默认的端口号。</p>
+<h2 id="2-nginx-配置"><a href="#2-nginx-配置" class="headerlink" title="2, nginx 配置"></a>2, nginx 配置</h2><p>nginx 所有的修改都需要修改配置文件来进行控制。</p>
+<p>修改配置之前，一般都需要备份一下配置文件，以防改错了</p>
+<p>nginx 帮我们考虑到了，提前给我们准备了一个备份文件，如下 </p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># ll /etc/nginx/</span></span><br><span class="line">总用量 68</span><br><span class="line">drwxr-xr-x 2 root root    6 11月 11 2022 conf.d</span><br><span class="line">drwxr-xr-x 2 root root    6 11月 11 2022 default.d</span><br><span class="line">-rw-r--r-- 1 root root 1077 11月 11 2022 fastcgi.conf  			<span class="comment"># fastcgi.conf 的备份文件</span></span><br><span class="line">-rw-r--r-- 1 root root 1077 11月 11 2022 fastcgi.conf.default</span><br><span class="line">-rw-r--r-- 1 root root 1007 11月 11 2022 fastcgi_params</span><br><span class="line">-rw-r--r-- 1 root root 1007 11月 11 2022 fastcgi_params.default	 <span class="comment"># fastcgi.params 的备份文件</span></span><br><span class="line">-rw-r--r-- 1 root root 2837 11月 11 2022 koi-utf</span><br><span class="line">-rw-r--r-- 1 root root 2223 11月 11 2022 koi-win</span><br><span class="line">-rw-r--r-- 1 root root 5231 11月 11 2022 mime.types</span><br><span class="line">-rw-r--r-- 1 root root 5231 11月 11 2022 mime.types.default		<span class="comment"># mime.types 的备份文件</span></span><br><span class="line">-rw-r--r-- 1 root root 2336 11月 11 2022 nginx.conf	<span class="comment"># nginx的主配置文件，nginx每次启动都会加载它</span></span><br><span class="line">-rw-r--r-- 1 root root 2656 11月 11 2022 nginx.conf.default	<span class="comment"># nginx.conf 的备份文件</span></span><br><span class="line">-rw-r--r-- 1 root root  636 11月 11 2022 scgi_params</span><br><span class="line">-rw-r--r-- 1 root root  636 11月 11 2022 scgi_params.default		<span class="comment"># scgi_params 的备份文件</span></span><br><span class="line">-rw-r--r-- 1 root root  664 11月 11 2022 uwsgi_params</span><br><span class="line">-rw-r--r-- 1 root root  664 11月 11 2022 uwsgi_params.default	<span class="comment"># uwsgi_params 的备份文件</span></span><br><span class="line">-rw-r--r-- 1 root root 3610 11月 11 2022 win-utf</span><br></pre></td></tr></table></figure>
+
+<p>先过滤一下配置文件，因为里面的 # 号，空行等太多了，带 # 号的都是注释，不用的，所以可以去掉</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/nginx/</span><br><span class="line">grep -Ev <span class="string">&#x27;#|^$&#x27;</span> nginx.conf.default &gt; nginx.conf</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看查看文件 </span></span><br><span class="line">[root@localhost nginx]<span class="comment"># cat nginx.conf</span></span><br><span class="line">worker_processes  1;</span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">    sendfile        on;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line">    server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  localhost;</span><br><span class="line">        location / &#123;</span><br><span class="line">            root   html;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="编辑配置文件"><a href="#编辑配置文件" class="headerlink" title="编辑配置文件"></a>编辑配置文件</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">vim nginx.conf</span><br><span class="line"><span class="comment"># 删除 17 - 20 行，剩下的就是最小配置了</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改后如下 </span></span><br><span class="line">[root@localhost nginx]<span class="comment"># cat nginx.conf</span></span><br><span class="line">worker_processes  1;						<span class="comment"># 启动 nginx 时工作进程的数量，可以加大这个数字来提高nginx 的处理请求的效率，但是这个数字也不能太大，因为进程是消耗系统内存资源的，调整一下这个数字，然后通过 free 指令可以查看一下内存容量的变化，建议和 CPU 核数一致就行</span></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;				 <span class="comment"># 连接数量，每个进程可以处理 1024 个连接</span></span><br><span class="line">&#125;</span><br><span class="line">http &#123;									   <span class="comment"># http 模块</span></span><br><span class="line">    include       mime.types;				 <span class="comment"># include 是包含的意思，这行的意思是，nginx 启动的时候加载 nginx.conf 主配置文件的时候，加载到这一行时，先包含加载一下 mime.types 文件里的配置，这个文件主要是用来标识支持哪些多媒体格式，这个文件在 nginx.conf 所在目录</span></span><br><span class="line">    default_type  application/octet-stream;	  <span class="comment"># 如果不能识别的文件，姥默认以 八进制数据流的方式来打开文件</span></span><br><span class="line">    <span class="comment"># 下面这两个配置也可以删掉</span></span><br><span class="line">    <span class="comment"># sendfile        on;</span></span><br><span class="line">    <span class="comment"># keepalive_timeout  65;</span></span><br><span class="line">    charset utf-8;							<span class="comment"># 设置字符集，</span></span><br><span class="line">    server &#123;							    <span class="comment"># 一个网站，一个 nginx 可以运行多个网站，添加这个配置项即可</span></span><br><span class="line">        listen       80;				     <span class="comment"># 监听端口，可以修改，比如改成81，等</span></span><br><span class="line">        server_name  localhost;				 <span class="comment"># 网站的域名，默认是localhost.后面可以配置成 www.lroyle.com</span></span><br><span class="line">        location / &#123;						<span class="comment"># 目录，必须要有个 location</span></span><br><span class="line">            root   html;					<span class="comment"># root  是站点根目录的意思，值为 html 表示一个相对路径，绝对路径是 /usr/share/nginx/html ，改成其它目录也是可以的 比如 root /web</span></span><br><span class="line">            index  index.html index.htm;	 <span class="comment"># 默认首页，访问网址原路径地时候，自动访问站点根目录下面的 index 或者 index.html，或者 index.htm 文件，如果没有这几个名字的文件，访问的时候就会提示 403，需要在网址上手动指定文件名称，这些文件名称是可以改的，比如 alfie.html</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment"># 第二个网站：</span></span><br><span class="line">   <span class="comment"># server &#123;</span></span><br><span class="line">   <span class="comment">#     listen       81;</span></span><br><span class="line">   <span class="comment">#    server_name  localhost;</span></span><br><span class="line">   <span class="comment">#   location / &#123;</span></span><br><span class="line">   <span class="comment">#          root   html;</span></span><br><span class="line">   <span class="comment">#         index  index.html index.htm;</span></span><br><span class="line">   <span class="comment">#    &#125;</span></span><br><span class="line">   <span class="comment"># &#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置文件的语法格式，每行结尾必须是英文的分号；"><a href="#配置文件的语法格式，每行结尾必须是英文的分号；" class="headerlink" title="配置文件的语法格式，每行结尾必须是英文的分号；"></a>配置文件的语法格式，每行结尾必须是英文的分号；</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">worker_processes  1;</span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">   <span class="comment"># sendfile        on;</span></span><br><span class="line">   <span class="comment"># keepalive_timeout  65;</span></span><br><span class="line">   charset utf-8;</span><br><span class="line">    server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  localhost;</span><br><span class="line">        location / &#123;</span><br><span class="line">            root   html;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>修改完配置文件之后，可以检查一下配置文件的语法是否ok</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 ~]<span class="comment"># nginx -t</span></span><br><span class="line">nginx: the configuration file /etc/nginx/nginx.conf syntax is ok</span><br><span class="line">nginx: configuration file /etc/nginx/nginx.conf <span class="built_in">test</span> is successful</span><br><span class="line"></span><br><span class="line"><span class="comment"># 百度是 php 语言开发的：下面两个方式访问效果一样,baidu的首页其实是 index.php</span></span><br><span class="line">https://www.baidu.com</span><br><span class="line">https://www.baidu.com/index.php</span><br></pre></td></tr></table></figure>
+
+<p>查看 nginx 进程</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 ~]<span class="comment"># ps -ef | grep nginx</span></span><br><span class="line"><span class="comment"># master process 是主进程的意思，也叫做管理进程，它是用来管理 nginx 整个运行的，nginx 的其它子进程如果死掉了，它会自动再启动其它的子进程。比如尝试 kill 下面的子进程，你会发现另外一个进程又自动启动了。真正干活的进程是下面的 worker process 进程，叫做工作进程，有请求来了，都是它处理的。</span></span><br><span class="line">root       1162      1  0 21:43 ?        00:00:00 nginx: master process /usr/sbin/nginx  </span><br><span class="line"><span class="comment"># 可以看到 nginx 是以  nginx 用户身份启动的。</span></span><br><span class="line">nginx      1163   1162  0 21:43 ?        00:00:00 nginx: worker process</span><br><span class="line">root       1300   1263  0 21:47 pts/0    00:00:00 grep --color=auto nginx</span><br></pre></td></tr></table></figure>
+
+<p>查看 mime.types，nginx 支持的多媒体类型文件</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim mime.types</span><br></pre></td></tr></table></figure>
+
+<p>默认 nginx 的站点根目录（存放网站代码的目录，也叫做网站的物理路径，真实路径等）在如下位置</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 ~]<span class="comment"># cd /usr/share/nginx/html/</span></span><br><span class="line">[root@web01 html]<span class="comment"># ls</span></span><br><span class="line">404.html  50x.html  en-US  icons  img  index.html  nginx-logo.png  poweredby.png</span><br></pre></td></tr></table></figure>
+
+<p>通过浏览器网址访问 nginx 启动的网站页面，默认 nginx 都会在这个目录中去寻找用户访问的页面对应的 html文件。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.0.4/    --- index.html</span><br><span class="line">http://10.0.04/img/centos-logo.png   --- img/centos-logo.png</span><br></pre></td></tr></table></figure>
+
+<p>比如放一个mp4格式的文件到根目录，直接访问文件名称就可以播放</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.0.4/video.mp4		<span class="comment"># 这是因为 nginx 的配置文件 mime.types 中看到，支持mp4，如果删掉了配置文件中 mp4 那一行数据，那么就不支持 mp4 格式文件的预览了，也就是不能直接在浏览器上播放 mp4 视频了，而是下拉下载，但是现在的浏览器功能比较强大，有些浏览器也会自动播放mp4 的视频，如果是 nginx 不能识别的文件格式，并且浏览器也不能识别这种格式，比如 xx.alfie，那么访问会直接下载这个文件。</span></span><br><span class="line"><span class="comment"># 再比如，如果是 nginx 支持，但是浏览器不支持的文件格式，比如 htc 格式的文件，nginx 能识别，但是浏览器不支持，那么浏览器会尝试用txt的方式来打开这个文件，如果 是一些视频或图片，那么就在浏览器上看到一堆乱码，如果 nginx 和浏览器都不支持的，基本就会看到直接下载。</span></span><br></pre></td></tr></table></figure>
+
+<p>如果删除了 &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html&#x2F; 目录中的全部文件和目录，如下</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/share/nginx/html/</span><br><span class="line"><span class="built_in">rm</span> -rf *</span><br></pre></td></tr></table></figure>
+
+<p>访问一下，怎么还能看到这个页面？这是浏览器做的缓存，将你的页面已经缓存到你电脑本地了，一访问还是访问的本地缓存的页面。</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/001_nginx%E5%AE%89%E8%A3%85/image-20250220220500203.png" alt="image-20250220220500203"></p>
+<p>多刷新几次，或者 ctrl + f5 强制刷新访问，也就是让浏览器不要访问缓存，直接去拿最新的页面，但是什么页面都没有了，效果如下，看到403 数学和英文单词 Forbidden,不允许的意思。</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/001_nginx%E5%AE%89%E8%A3%85/image-20250220220708680.png" alt="image-20250220220708680"></p>
+<p>如何看某个网站是运行在 linux 上？如下，右键——点击检查，或者按 F12，或者找到浏览器设置，打开开发者工具就看到如下窗口了。</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/001_nginx%E5%AE%89%E8%A3%85/image-20250220221100636.png" alt="image-20250220221100636"></p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/web/002_nginx进阶学习/" title=""></a></h2>
+                <p class="excerpt">
+                
+                nginx 进阶学习nginx 多站点配置一个 nginx 上可以运行多个网站，有多种方式：
+12http:// + ip/域名 + 端口 + URI其中， ip/域名变了，那么网站入口就变了，端口变了，网站入口也变了，而每个网站都需要有自己的入口
+
+方式一：多端口12345678910111213
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2025-02-25T08:58:03.994Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/web/002_nginx进阶学习/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2025/01/30/交易/专业谐波形态/" title="专业谐波形态">专业谐波形态</a></h2>
+                <p class="excerpt">
+                
+                未算胜，先算败！
+一定要做止损，盈利2：1一定要平一半。
+单边上升，使用 孕线，吞没形态，PinBar 找入场点做多。
+1，交易原理蜡烛图的分类
+
+2，理解市场（技术分析的基石——结构）通过结构寻找关键K线。
+先有胜率，再有交易系统，最后才是赚钱
+仔细观察过去图表，我们会发现价格经常在同一“水平”位
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2025-01-30T07:28:44.000Z" class="post-list__meta--date date">2025-01-30</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
+</span><a class="btn-border-small" href="/2025/01/30/交易/专业谐波形态/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'lroyle'; 
+      
+  var disqus_identifier = '/2025/02/25/网络安全/web/001_nginx安装/';
+  var disqus_title = '';
+  var disqus_url = 'http://liurong.love/2025/02/25/网络安全/web/001_nginx安装/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2025 lroyle - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://liurong.love ">@LIURONG</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?691552d8a51493e93d82164e4a98f26d";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

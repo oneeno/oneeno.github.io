@@ -85,6 +85,10 @@
             
               <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
             
+              <li class="navigation__item"><a href="/categories">分类</a></li>
+            
+              <li class="navigation__item"><a href="/tags">标签云</a></li>
+            
               <li class="navigation__item"><a href="/about">关于我</a></li>
             
             </ul>
@@ -233,15 +237,6 @@
 
 <p><img src="/2016/01/01/2016/1617_hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20230213170549054.png" alt="image-20230213170549054"></p>
 <p>看到以上信息，说明 SSH 配置成功。</p>
-<p>6, 此外还需要如下配置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#x27; Github 用户名&#x27;               // 注意是 username 而非 昵称</span><br><span class="line">git config --global user.email &#x27;lroyle@126.com&#x27;             // github 注册邮箱</span><br></pre></td></tr></table></figure>
-
-<p>至此，已经成功配置好了 Github</p>
-<h2 id="第四章-使用-Hexo搭建博客"><a href="#第四章-使用-Hexo搭建博客" class="headerlink" title="第四章  使用 Hexo搭建博客"></a>第四章  使用 Hexo搭建博客</h2><h3 id="1，-初始化"><a href="#1，-初始化" class="headerlink" title="1， 初始化"></a>1， 初始化</h3><ol>
-<li>在电脑某个磁盘 随便创建一个文件夹，名字可以随便写</li>
-<li>在上面创建的文件夹下右键–&gt; 打开 Git Bash Here，输入命令：<code>hexo init</code> 进行初始化</li>
-</ol>
-<p><img src="/2016/01/01/2016/1617_hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20230213172540214.png" alt="image-20230213172540214"></p>
 <p>若出现以下问题：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alfie@lroyle MINGW64 /d/Alfie/blog/bg</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">ssh -T git@github.com</span></span><br><span class="line">ssh: connect to host github.com port 22: Connection timed out</span><br></pre></td></tr></table></figure>
 
@@ -264,6 +259,15 @@
 
 
 
+<p>6, 此外还需要如下配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#x27; Github 用户名&#x27;               // 注意是 username 而非 昵称</span><br><span class="line">git config --global user.email &#x27;lroyle@126.com&#x27;             // github 注册邮箱</span><br></pre></td></tr></table></figure>
+
+<p>至此，已经成功配置好了 Github</p>
+<h2 id="第四章-使用-Hexo搭建博客"><a href="#第四章-使用-Hexo搭建博客" class="headerlink" title="第四章  使用 Hexo搭建博客"></a>第四章  使用 Hexo搭建博客</h2><h3 id="1，-初始化"><a href="#1，-初始化" class="headerlink" title="1， 初始化"></a>1， 初始化</h3><ol>
+<li>在电脑某个磁盘 随便创建一个文件夹，名字可以随便写</li>
+<li>在上面创建的文件夹下右键–&gt; 打开 Git Bash Here，输入命令：<code>hexo init</code> 进行初始化</li>
+</ol>
+<p><img src="/2016/01/01/2016/1617_hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20230213172540214.png" alt="image-20230213172540214"></p>
 <p>hexo 会自动下载一些文件到穿上目录，包括 node_modules,目录结构如下图</p>
 <p><img src="/2016/01/01/2016/1617_hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20230213172645721.png" alt="image-20230213172645721"></p>
 <ol start="3">

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>LIURONG | 面向大海 | 重新启航</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="做时间的朋友！">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="LIURONG | 面向大海 | 重新启航">
+    <meta name="twitter:description" content="做时间的朋友！">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="LIURONG | 面向大海 | 重新启航">
+    <meta property="og:description" content="做时间的朋友！">
+
+    
+    <meta name="author" content="lroyle">
+    
+    
+<link rel="stylesheet" href="/css/vno.css">
+
+    
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="LIURONG" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://liurong.love/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+    
+<script src="/js/main.js"></script>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 LIURONG 的主页"><img src="/images/avatar.jpg" width="80" alt="LIURONG logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for LIURONG">LIURONG</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">面向大海 | 重新启航</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">做时间的朋友！</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">文字阁</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/categories">分类</a></li>
+            
+              <li class="navigation__item"><a href="/tags">标签云</a></li>
+            
+              <li class="navigation__item"><a href="/about">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="https://weibo.com/lroyle" title="我的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/oneeno" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2025-02-25T08:58:03.994Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <h1 id="nginx-进阶学习"><a href="#nginx-进阶学习" class="headerlink" title="nginx 进阶学习"></a>nginx 进阶学习</h1><h2 id="nginx-多站点配置"><a href="#nginx-多站点配置" class="headerlink" title="nginx 多站点配置"></a>nginx 多站点配置</h2><p>一个 nginx 上可以运行多个网站，有多种方式：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http:// + ip/域名 + 端口 + URI</span><br><span class="line">其中， ip/域名变了，那么网站入口就变了，端口变了，网站入口也变了，而每个网站都需要有自己的入口</span><br></pre></td></tr></table></figure>
+
+<h3 id="方式一：多端口"><a href="#方式一：多端口" class="headerlink" title="方式一：多端口"></a>方式一：多端口</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">[root@<span class="attribute">web01</span> nginx]<span class="comment"># cat nginx.conf</span></span><br><span class="line">worker_processes  <span class="number">2</span>;</span><br><span class="line"><span class="section">events</span> &#123;</span><br><span class="line">    <span class="attribute">worker_connections</span>  <span class="number">1024</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="section">http</span> &#123;</span><br><span class="line">    <span class="attribute">include</span>       mime.types;</span><br><span class="line">    <span class="attribute">default_type</span>  application/octet-stream;</span><br><span class="line">    <span class="comment"># sendfile        on;</span></span><br><span class="line">    <span class="comment"># keepalive_timeout  65;</span></span><br><span class="line">    <span class="attribute">charset</span> utf-<span class="number">8</span>;</span><br><span class="line">    <span class="comment"># 8yy 复制8 行，小p 黏贴</span></span><br><span class="line">    <span class="section">server</span> &#123;</span><br><span class="line">        <span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">        <span class="attribute">server_name</span>  localhost;</span><br><span class="line">        <span class="section">location</span> / &#123;</span><br><span class="line">            <span class="attribute">root</span>   /html/one;</span><br><span class="line">            <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="section">server</span> &#123;</span><br><span class="line">        <span class="attribute">listen</span>       <span class="number">81</span>;</span><br><span class="line">        <span class="attribute">server_name</span>  localhost;</span><br><span class="line">        <span class="section">location</span> / &#123;</span><br><span class="line">            <span class="attribute">root</span>   /html/two;</span><br><span class="line">            <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="section">server</span> &#123;</span><br><span class="line">        <span class="attribute">listen</span>       <span class="number">82</span>;</span><br><span class="line">        <span class="attribute">server_name</span>  localhost;</span><br><span class="line">        <span class="section">location</span> / &#123;</span><br><span class="line">            <span class="attribute">root</span>   /html/three;</span><br><span class="line">            <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 nginx]<span class="comment"># mkdir -p /html/&#123;one,two,three&#125;</span></span><br><span class="line">[root@web01 nginx]<span class="comment"># echo &#x27;one&#x27; &gt;/html/one/index.html</span></span><br><span class="line">[root@web01 nginx]<span class="comment"># echo &#x27;two&#x27; &gt;/html/two/index.html</span></span><br><span class="line">[root@web01 nginx]<span class="comment"># echo &#x27;three&#x27; &gt;/html/three/index.html</span></span><br><span class="line"><span class="comment"># 或者给三个目录中都放不同的网站源码。one —— yiliao   two ——  youxi		three —— 随便来个 index.html 即可</span></span><br><span class="line"><span class="comment"># 解压指令， tar -xf youxi.tart.gz</span></span><br><span class="line"><span class="comment"># zip       unzip file.zip   或者 zip -e file.zip</span></span><br><span class="line">在站点根目录下，没有 index.html 首页文件，那么直接访问网址会报 403 错误。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="方式三、多域名"><a href="#方式三、多域名" class="headerlink" title="方式三、多域名"></a>方式三、多域名</h3><p>如果多个网站想在互联网上被公网访问，那么就需要多个ip，而公网ip是收费折，那么有五种省钱的方式，就是多域名中方式。</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">[root@<span class="attribute">web01</span> nginx]<span class="comment"># cat nginx.conf</span></span><br><span class="line">worker_processes  <span class="number">2</span>;</span><br><span class="line"><span class="section">events</span> &#123;</span><br><span class="line">    <span class="attribute">worker_connections</span>  <span class="number">1024</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="section">http</span> &#123;</span><br><span class="line">    <span class="attribute">include</span>       mime.types;</span><br><span class="line">    <span class="attribute">default_type</span>  application/octet-stream;</span><br><span class="line">    <span class="comment"># sendfile        on;</span></span><br><span class="line">    <span class="comment"># keepalive_timeout  65;</span></span><br><span class="line">    <span class="attribute">charset</span> utf-<span class="number">8</span>;</span><br><span class="line">    <span class="comment"># 8yy 复制8 行，小p 黏贴</span></span><br><span class="line">    <span class="section">server</span> &#123;</span><br><span class="line">        <span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">        <span class="attribute">server_name</span>  a.alfie.com;</span><br><span class="line">        <span class="section">location</span> / &#123;</span><br><span class="line">            <span class="attribute">root</span>   /html/one;</span><br><span class="line">            <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="section">server</span> &#123;</span><br><span class="line">        <span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">        <span class="attribute">server_name</span>  b.alfie.com;</span><br><span class="line">        <span class="section">location</span> / &#123;</span><br><span class="line">            <span class="attribute">root</span>   /html/two;</span><br><span class="line">            <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="section">server</span> &#123;</span><br><span class="line">        <span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">        <span class="attribute">server_name</span>  c.alfie.com;</span><br><span class="line">        <span class="section">location</span> / &#123;</span><br><span class="line">            <span class="attribute">root</span>   /html/three;</span><br><span class="line">            <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>修改完配置文件后，重启 nginx</p>
+<p>因为 alfie.com 不是我的，直接通过浏览器访问 <a href="http://www.alfie.com/">www.alfie.com</a> 可能会访问别人的网站。</p>
+<p>如果想暂用一下这个域名，那么可以修改物理机系统的 hosts 文件，添加一个 ip  和域名的对应关系即可，因为host 文件的优先级比 DNS 服务器要高。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hosts 文件的位置在以下路径</span><br><span class="line">C:\Windows\System32\drivers\etc</span><br></pre></td></tr></table></figure>
+
+<p>使用 cmd 来 ping 一下域名</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\CH&gt;ping a.alfie.com</span><br><span class="line"></span><br><span class="line">正在 Ping a.alfie.com [10.0.0.4] 具有 32 字节的数据:</span><br><span class="line">来自 10.0.0.4 的回复: 字节=32 时间&lt;1ms TTL=64</span><br><span class="line">来自 10.0.0.4 的回复: 字节=32 时间&lt;1ms TTL=64</span><br><span class="line">来自 10.0.0.4 的回复: 字节=32 时间&lt;1ms TTL=64</span><br><span class="line">来自 10.0.0.4 的回复: 字节=32 时间&lt;1ms TTL=64</span><br></pre></td></tr></table></figure>
+
+<p>然后通过浏览器访问即可，可以看到一个ip地址可以对应多个域名，一个域名可以在 nginx 上配置多个站点，这也是很多网站的玩法，多个域名指向同一个网站。</p>
+<p>自助建站嗠好多都是这么玩的，他们公司自己买个服务器，买个公网ip，买个域名，然后开一个自助建站的网站，用户就可以来网站上注册账号，他就给用户分配一个子域名，帮助用户创建一个站点根目录， nginx 上配置一下，再开一个ftp服务，让用户自己可以上传网站代码，这就搞定了，每个收个几百上千的，也能挣钱，往往一个服务器上可能都跑几百个网站。</p>
+<p>如果每来一个用户，就在nginx 主配置文件中添加一个 server 记录，那么 nginnx 配置文件会变得很大，很难管理，所以更换一种方式来管理配置文件，将每个配置都单独拆分出来即可。</p>
+<h3 id="include-配置文件"><a href="#include-配置文件" class="headerlink" title="include 配置文件"></a>include 配置文件</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">worker_processes  2;</span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">   <span class="comment">#  sendfile        on;</span></span><br><span class="line">   <span class="comment">#  keepalive_timeout  65;</span></span><br><span class="line">    charset utf-8;</span><br><span class="line">    include /etc/nginx/conf.d/*.conf;          <span class="comment"># 加载外部以 .conf 结尾的配置文件，如果你在的路径没有conf.d就自行创建一个 —— mkdir conf.d </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line">[root@web01 nginx]<span class="comment"># cat conf.d/a_alfie_com.conf </span></span><br><span class="line">server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  a.alfie.com;</span><br><span class="line">        location / &#123;</span><br><span class="line">            root   /html/one;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[root@web01 nginx]<span class="comment"># cat conf.d/b_alfie_com.conf </span></span><br><span class="line">server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  b.alfie.com;</span><br><span class="line">        location / &#123;</span><br><span class="line">            root   /html/two;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[root@web01 nginx]<span class="comment"># cat conf.d/c_alfie_com.conf </span></span><br><span class="line">server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  c.alfie.com;</span><br><span class="line">        location / &#123;</span><br><span class="line">            root   /html/three;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="nginx-日志"><a href="#nginx-日志" class="headerlink" title="nginx 日志"></a>nginx 日志</h3><p>现在 web 服务器都必须开启日志记录功能，而且记录必须超过半年，这是网络安全法规定的。</p>
+<p>系统的安全日志，就是 ssh 登录的时候我们看的，如下</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 ~]<span class="comment"># cat /var/log/secure</span></span><br><span class="line">Feb 17 21:57:51 localhost polkitd[531]: Loading rules from directory /etc/polkit-1/rules.d</span><br><span class="line">Feb 17 21:57:51 localhost polkitd[531]: Loading rules from directory /usr/share/polkit-1/rules.d</span><br><span class="line">。。。</span><br></pre></td></tr></table></figure>
+
+<p>登录系统就会被记录</p>
+<p>web 服务程序也是一样，每次都有人请求我们，我们就把本次请求相关信息给记录下来，有了记录，那么，如果服务器被网络攻击了，我们就可以在日志中去分析，看看是谁在什么时候攻击我们的，什么样的攻击，哪些成功了，哪些失败了，方便我们后面进行攻击溯源。</p>
+<p>nginx 默认已经帮我们记录了日志，在 &#x2F;var&#x2F;log&#x2F;nginx&#x2F; 目录下面。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 ~]<span class="comment"># ls /var/log/nginx/</span></span><br><span class="line">access.log              access.log-20250220  error.log-20250219.gz</span><br><span class="line">access.log-20250219.gz  error.log            error.log-20250220</span><br><span class="line"><span class="comment"># 每个日志是会按照当天的日期进行切割</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="清空日志"><a href="#清空日志" class="headerlink" title="清空日志"></a>清空日志</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 nginx]<span class="comment"># &gt;access.log</span></span><br><span class="line">[root@web01 nginx]<span class="comment"># cat access.log</span></span><br></pre></td></tr></table></figure>
+
+<p>访问下下网站，再看日志</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 nginx]<span class="comment"># cat access.log</span></span><br><span class="line">10.0.0.1 - - [24/Feb/2025:23:23:06 +0800] <span class="string">&quot;GET / HTTP/1.1&quot;</span> 200 5547 <span class="string">&quot;-&quot;</span> <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0&quot;</span></span><br><span class="line">10.0.0.1 - - [24/Feb/2025:23:23:06 +0800] <span class="string">&quot;GET /libs/modules/egret/egret.min.js HTTP/1.1&quot;</span> 200 147755 <span class="string">&quot;http://a.alfie.com/&quot;</span> <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0&quot;</span></span><br><span class="line">10.0.0.1 - - [24/Feb/2025:23:23:06 +0800] <span class="string">&quot;GET /libs/modules/game/game.min.js HTTP/1.1&quot;</span> 200 34210 <span class="string">&quot;http://a.alfie.com/&quot;</span> <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0&quot;</span></span><br><span class="line">10.0.0.1 - - [24/Feb/2025:23:23:06 +0800] <span class="string">&quot;GET /libs/modules/tween/tween.min.js HTTP/1.1&quot;</span> 200 7779 <span class="string">&quot;http://a.alfie.com/&quot;</span> <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0&quot;</span></span><br><span class="line">10.0.0.1 - - [24/Feb/2025:23:23:06 +0800] <span class="string">&quot;GET /libs/modules/res/res.min.js HTTP/1.1&quot;</span> 200 29713 <span class="string">&quot;http://a.alfie.com/&quot;</span> <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0&quot;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>304 状态码表示客户端浏览器用的是浏览器缓存页面，所以看到后面是0，表示没有响应任何数据。</p>
+<p>上面是访问日志的简单查看，除了访问日志，nginx 还有错误日志</p>
+<h4 id="1，错误日志"><a href="#1，错误日志" class="headerlink" title="1，错误日志"></a>1，错误日志</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 nginx]<span class="comment"># cat error.log</span></span><br><span class="line">2025/02/20 21:55:30 [error] 1163<span class="comment">#1163: *3 open() &quot;/usr/share/nginx/html/favicon.ico&quot; failed (2: No such file or directory), client: 10.0.0.1, server: localhost, request: &quot;GET /favicon.ico HTTP/1.1&quot;, host: &quot;10.0.0.4&quot;, referrer: &quot;http://10.0.0.4/&quot;</span></span><br><span class="line">2025/02/20 22:06:48 [error] 1163<span class="comment">#1163: *29 directory index of &quot;/usr/share/nginx/html/&quot; is forbidden, client: 10.0.0.1, server: localhost, request: &quot;GET / HTTP/1.1&quot;, host: &quot;10.0.0.4&quot;</span></span><br><span class="line">2025/02/20 22:20:22 [warn] 1378<span class="comment">#1378: conflicting server name &quot;localhost&quot; on 0.0.0.0:80, ignored</span></span><br></pre></td></tr></table></figure>
+
+<p>没有 favicon.icon 文件，可以切换到站点目录中去下载一个：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://www.mi.com/favicon.ico</span><br></pre></td></tr></table></figure>
+
+<p>如果有人故意访问一个错误的路径，让你的网站报错，显示出 nginx 的版本</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250224233228245.png" alt="image-20250224233228245"></p>
+<p>error_log &#x2F;opt&#x2F;nginx_error.log info;</p>
+<h4 id="2，访问日志"><a href="#2，访问日志" class="headerlink" title="2，访问日志"></a>2，访问日志</h4><p>定制日志记录格式：这个必须配置在 server 配置外面</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">log_format</span>  compression <span class="string">&#x27;<span class="variable">$remote_addr</span> - <span class="variable">$remote_user</span> [<span class="variable">$time_local</span>]&#x27;</span></span><br><span class="line">					  <span class="string">&#x27;&quot;<span class="variable">$request</span>&quot; <span class="variable">$status</span> <span class="variable">$bytes_sen</span> &#x27;</span></span><br><span class="line">					  <span class="string">&#x27;&quot;<span class="variable">$http_referer</span>&quot;  &quot;<span class="variable">$http_user_agent</span>&quot; &quot;<span class="variable">$gzip_ratio</span>&quot;&#x27;</span>;</span><br><span class="line"><span class="comment"># commpression 可以理解为是这个格式的名字，谁想用这个格式，谁应用这个名字来指定格式</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>$remote_addr		客户端的 ip 地址</li>
+<li>$remote_user        客户端的用户名</li>
+<li>$time_local            当前时间</li>
+<li>$request                请求起始行</li>
+<li>$status                   http 状态码</li>
+<li>$bytes_sent           响应资源的大小</li>
+<li>$http_referer          记录资源的跳转地址</li>
+<li>$http_user_agent   用户的终端信息</li>
+<li>$gzip_ratio              gzip的压缩级别</li>
+</ul>
+<p>比如我们想让日志记录一下请求时间，客户端ip，请求uri，状态码，文件大小。</p>
+<p>可以设置成如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 nginx]<span class="comment"># vim  /etc/nginx/nginx.conf</span></span><br><span class="line">worker_processes  2;</span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line">http &#123;</span><br><span class="line">    log_format    <span class="built_in">test</span> <span class="string">&#x27;[$time_local] $remote_addr &quot;$request&quot; $status  $bytes_sent&#x27;</span>;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">   <span class="comment">#  sendfile        on;</span></span><br><span class="line">   <span class="comment">#  keepalive_timeout  65;</span></span><br><span class="line">    charset utf-8;</span><br><span class="line">    include /etc/nginx/conf.d/*.conf;          </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>每个网站都可以单独记录自己的日志</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 nginx]<span class="comment"># cd conf.d/</span></span><br><span class="line">[root@web01 conf.d]<span class="comment"># ls</span></span><br><span class="line">a_alfie_com.conf  b_alfie_com.conf  c_alfie_com.conf</span><br><span class="line">[root@web01 conf.d]<span class="comment"># vim a_alfie_com.conf </span></span><br><span class="line">server &#123;</span><br><span class="line">        listen        80;</span><br><span class="line">        server_name   a.alfie.com;</span><br><span class="line">        access_log  /opt/nginx/a.alfie.com_log <span class="built_in">test</span>;  </span><br><span class="line">        location /  &#123;</span><br><span class="line">            root   /html/one;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意： test 是上面指定的日志格式的名称，&#x2F;opt&#x2F; 目录下没有 nginx 目录，需要我们手动创建，这个目录是随意指定的。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 one]<span class="comment"># mkdir /opt/nginx</span></span><br><span class="line"><span class="comment"># 还需要给 /opt/ 目录下创建的这个目录授权。不然 nginx 用户没办法访问这个目录</span></span><br><span class="line">[root@web01 one]<span class="comment"># chown nginx:nginx /opt/nginx/</span></span><br></pre></td></tr></table></figure>
+
+<p>改完之后，重启 nginx, 然后访问网站，看一下 &#x2F;opt&#x2F;nginx目录，看看日志格式</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 one]<span class="comment"># ls /opt/nginx/</span></span><br><span class="line">a.alfie.com_log</span><br><span class="line"></span><br><span class="line"><span class="comment"># access_log  /var/log/nginx/access.log  compression;</span></span><br><span class="line"><span class="comment"># access_log  /opt/nginx/access.log     compression;   /opt/目录需要授权，不然没办法记录进去</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：错误日志的格式我们是不能自定义的，顶多能修改错误日志的保存路径。</p>
+<h3 id="开启-basic-认证"><a href="#开启-basic-认证" class="headerlink" title="开启 basic 认证"></a>开启 basic 认证</h3><p>有些网站会开启一个叫做 basic 认证的东西，basic 认证叫做 http 基本认证，就是给网站多一把锁，防止恶意访问，比如访问一些敏感后台路径等操作。</p>
+<p>比如我搭建一个游戏网站，只想自己玩，不想让其它人玩，就可以加上 basic 认证。</p>
+<p>首先生成 htpasswd 账号密码文件。很多在线网站都可以生成，如下：</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225001055262.png" alt="image-20250225001055262"></p>
+<p>把生成的密码保存下来。比如保存到 &#x2F;etc&#x2F;nginx&#x2F;htpasswd 文件中</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@web01 conf.d]<span class="comment"># vim /etc/nginx/htpasswd</span></span><br><span class="line"><span class="comment"># 写入刚才保存的用户和密码</span></span><br><span class="line">alfie:MTyr2pdlzUees</span><br></pre></td></tr></table></figure>
+
+<p>然后修改 nginx 下 a.alfie.com 网站的配置文件</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># auth_basic 表示开启这个功能，&quot;a.alfie.com&quot;是备注信息，随便写，一些老浏览器能看到，新浏览器看不到备注信息了。</span></span><br><span class="line">auth_basic		<span class="string">&quot;a.alfie.com&quot;</span>;	</span><br><span class="line"><span class="comment">#  这是 账号密码存放在哪个位置</span></span><br><span class="line">auth_basic_user_file	/etc/nginx/htpasswd;	</span><br></pre></td></tr></table></figure>
+
+<p>如下</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[root@<span class="attribute">web01</span> conf.d]<span class="comment"># cd /etc/nginx/conf.d/</span></span><br><span class="line">[root<span class="variable">@web01</span> conf.d]<span class="comment"># ls</span></span><br><span class="line">a_alfie_com.conf  b_alfie_com.conf  c_alfie_com.conf</span><br><span class="line">[root<span class="variable">@web01</span> conf.d]<span class="comment"># vim a_alfie_com.conf </span></span><br><span class="line">server &#123;</span><br><span class="line">        <span class="attribute">listen</span>        <span class="number">80</span>;</span><br><span class="line">        <span class="attribute">server_name</span>   a.alfie.com;</span><br><span class="line">        <span class="attribute">access_log</span>  /opt/nginx/a.alfie.com_log test;</span><br><span class="line">        <span class="section">location</span> /  &#123;</span><br><span class="line">	    <span class="attribute">auth_basic</span>		<span class="string">&quot;a.alfie.com&quot;</span>;</span><br><span class="line">	    <span class="attribute">auth_basic_user_file</span>	/etc/nginx/htpasswd;</span><br><span class="line">            <span class="attribute">root</span>   /html/one;</span><br><span class="line">            <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>保存之后 ，重新启动 nginx 就可以了。</p>
+<p>访问 a 网站效果如下：登录成功之后，再刷新页面就不会再弹出这个了。</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225002235926.png" alt="image-20250225002235926"></p>
+<h3 id="ssl-证书配置"><a href="#ssl-证书配置" class="headerlink" title="ssl 证书配置"></a>ssl 证书配置</h3><p>http 协议访问网站现在默认会显示不安全，因为数据默认是明文传输的。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://a.alfie.com/</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225002450463.png" alt="image-20250225002450463"></p>
+<p>https 是 http + ssl，ssl 是加密协议，通过证书来进行加密的，安装了证书的网站才会用 https 协议来交互，才不会提示不安全。</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225002714151.png" alt="image-20250225002714151"></p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225002732652.png" alt="image-20250225002732652"></p>
+<p>可以看到 谷歌网站的证书相关信息。</p>
+<p>一般申请证书之前需要先申请一个域名，才有资格申请证书。</p>
+<p>如果域名是在阿里云上买的，那么申请https证书，就需要到阿里云上申请。</p>
+<p>搜索【数字证书管理服务】<img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225004215013.png" alt="image-20250225004215013"></p>
+<p>点击【SSL 证书管理】</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225004305641.png" alt="image-20250225004305641"></p>
+<p>选择【个人测试证书（原免费证书）】，然后点击 【立即购买】</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225004445670.png" alt="image-20250225004445670"></p>
+<p>选择【个人测试证书】——【个人测试证书（免费版）】，勾选服务协议，再点【立即购买】</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225004624137.png" alt="image-20250225004624137"></p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225004705009.png" alt="image-20250225004705009"></p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225004721843.png" alt="image-20250225004721843"></p>
+<p>等待审核，审核通过后，下载证书，就可以使用了。</p>
+<h3 id="return-和-rewrite-跳转"><a href="#return-和-rewrite-跳转" class="headerlink" title="return 和 rewrite 跳转"></a>return 和 rewrite 跳转</h3><h4 id="1-return"><a href="#1-return" class="headerlink" title="1,return"></a>1,return</h4><p>使用 return 跳转</p>
+<h3 id="nginx-gzip-压缩"><a href="#nginx-gzip-压缩" class="headerlink" title="nginx gzip 压缩"></a>nginx gzip 压缩</h3><p>nginx 采用的压缩方式是gzip </p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost 22:14:03 /etc/nginx/conf.d]<span class="comment">#cd ~</span></span><br><span class="line">[root@localhost 22:14:59 ~]<span class="comment">#ll</span></span><br><span class="line">总用量 4</span><br><span class="line">-rw-------. 1 root root 1320 5月  16 2024 anaconda-ks.cfg</span><br><span class="line"></span><br><span class="line">[root@localhost 22:15:06 ~]<span class="comment">#gzip anaconda-ks.cfg </span></span><br><span class="line">[root@localhost 22:16:05 ~]<span class="comment">#ll</span></span><br><span class="line">总用量 4</span><br><span class="line">-rw------- 1 root root 760 5月  16 2024 anaconda-ks.cfg.gz</span><br></pre></td></tr></table></figure>
+
+<p>可以看到 gzip 压缩的文件还是小了很多，而且原文件没有了，只剩下压缩文件。</p>
+<p>nginx 压缩是为了省流量、加快传输速度。因为服务端的流量都是要花钱的，尤其是要做加速的网站，比如CDN加速，都是要收取流量费的。</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225222208011.png" alt="image-20250225222208011"></p>
+<p>很明显，如果服务器能够做压缩，既能够省流量，又能够加快传输速度。但是如果手动给每个文件进行压缩，就太慢了，所以，在部署nginx的时候，一般都会给ngixn做自动压缩的配置。</p>
+<p>将下面的所有配置全部拷贝到 nginx 网站配置上，哪个网站需要配置，就给哪个网站配置上。</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">gzip</span>	<span class="literal">on</span>;					   <span class="comment"># 开启gzip压缩</span></span><br><span class="line"><span class="attribute">gzip_min_length</span>		<span class="number">1k</span>;			<span class="comment"># 最小压缩文件，小于1kB的就不压缩了</span></span><br><span class="line"><span class="attribute">gzip_buffers</span>	 <span class="number">4</span>  <span class="number">32k</span>;         <span class="comment"># 内存缓冲，压缩需要提前规划一些内存空间出来，4个32kB的空间</span></span><br><span class="line"><span class="attribute">gzip_http_version</span>    <span class="number">1</span>.<span class="number">1</span>;        <span class="comment"># http版本，默认是1.0，1.1需要自己声明，不过现在比较新的nginx应该默认就是1.1了</span></span><br><span class="line"><span class="attribute">gzip_comp_level</span>      <span class="number">9</span>;          <span class="comment"># 压缩等级，等级数1-9，压缩等级越高，压缩用的时长越长，但是压缩的就越小</span></span><br><span class="line"><span class="attribute">gzip_types</span>  text/css text/xml applicaion/javascript;  <span class="comment"># 压缩的文件类型，这些类型的文件才会被压缩，为什么压缩的都是文本文件，而不是压缩图片，视频和音频等多媒体文件？因为文本文件的压缩比是最高的，值得压缩。比如 jpg 图片文件，这种格式的图片本身就是压缩过的文件，再压缩的意义不大。</span></span><br><span class="line"><span class="attribute">gzip_vary</span>			<span class="literal">on</span>;			<span class="comment"># http 响应头添加gzip标识</span></span><br><span class="line"><span class="attribute">gzip_disable</span> <span class="string">&quot;MSIE [1-7]\.&quot;</span>;      <span class="comment">#遇到 IE 浏览器1-7取消gzip压缩</span></span><br></pre></td></tr></table></figure>
+
+<p>比如给a.alfie.com 网站进行配置压缩，配置之前可以先访问下网站，在浏览器开发者工具栏看一下流量情况。</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225231209896.png" alt="image-20250225231209896"></p>
+<p>配置自动压缩</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">server&#123;   </span><br><span class="line">    <span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">    <span class="attribute">server_name</span>  localhost;</span><br><span class="line">    <span class="attribute">access_log</span>   /opt/nginx/a_log;</span><br><span class="line">    <span class="section">location</span> / &#123;</span><br><span class="line">    <span class="comment"># 添加到这里即可</span></span><br><span class="line">	<span class="attribute">gzip</span> <span class="literal">on</span>;												<span class="comment"># 开启自动gzip压缩</span></span><br><span class="line">	<span class="attribute">gzip_min_length</span> <span class="number">1k</span>;										 <span class="comment"># 最小压缩文件</span></span><br><span class="line">	<span class="attribute">gzip_buffers</span>  <span class="number">4</span> <span class="number">32k</span>;									 <span class="comment"># 内存缓冲</span></span><br><span class="line">	<span class="attribute">gzip_http_version</span> <span class="number">1</span>.<span class="number">1</span>;									 <span class="comment"># http 版本</span></span><br><span class="line">	<span class="attribute">gzip_comp_level</span> <span class="number">9</span>;										 <span class="comment"># 压缩等级</span></span><br><span class="line">	<span class="attribute">gzip_types</span> text/css  text/xml  application/javascript;      <span class="comment"># 压缩类型</span></span><br><span class="line">	<span class="attribute">gzip_vary</span> <span class="literal">on</span>;											<span class="comment"># http 响应头添加 gzip 标识</span></span><br><span class="line">	<span class="attribute">gzip_disable</span> <span class="string">&quot;MSIE [1-7]\.&quot;</span>;							 <span class="comment"># 遇到 IE 浏览器 1-7 取消 gzip 压缩</span></span><br><span class="line">        <span class="attribute">root</span>  /usr/share/nginx/html;</span><br><span class="line">        <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 配置完成，重启 nginx</span></span><br></pre></td></tr></table></figure>
+
+<p>访问再看流量统计，可以看到总体资源大小j 1.14KB，传输的流量小了。为什么总体资源大小还是那么大呢？因为浏览器收到压缩文件之后，会自动帮我们解压，解压出来之后，还是原始的大小。</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225231752651.png" alt="image-20250225231752651"></p>
+<p>服务端开启了 gzip 压缩功能，浏览器怎么知道要解压呢？服务端要告诉浏览器；</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225231952647.png" alt="image-20250225231952647"></p>
+<p>浏览器其实会告诉服务端，它自己支不支持压缩，如下</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225232215126.png" alt="image-20250225232215126"></p>
+<p>如果你的客户端不支持这种压缩文件或者说不支持这种压缩格式，那么服务端只能老老实实发送原文件，不压缩。</p>
+<p>而且，压缩和解压缩会消耗双方的CPU性能，但是现在的CPU性能都比较高，不在乎这点消耗。摩尔定律说，每一年半或者两年，CPU的性能会增加一倍。但是现在受限于CPU的物理制作工艺，很难突破每年性能提升一倍。</p>
+<h3 id="nginx-目录浏览"><a href="#nginx-目录浏览" class="headerlink" title="nginx 目录浏览"></a>nginx 目录浏览</h3><p>如下两个配置即可。</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">autoindex</span>    <span class="literal">on</span>;				<span class="comment"># 开启目录浏览功能</span></span><br><span class="line"><span class="attribute">autoindex_exact_size</span>	<span class="literal">off</span>;	 <span class="comment"># 显示文件大小的时候带单位</span></span><br></pre></td></tr></table></figure>
+
+<p>在gninx 网站的配置文件中添加上面的两项</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    <span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">    <span class="attribute">server_name</span>  localhost;</span><br><span class="line">    <span class="attribute">access_log</span>   /opt/nginx/a_log;</span><br><span class="line">    <span class="attribute">autoindex</span>    <span class="literal">on</span>;					<span class="comment"># 这里</span></span><br><span class="line">    <span class="attribute">autoindex_exact_size</span>  <span class="literal">off</span>;			 <span class="comment"># 这里</span></span><br><span class="line">    <span class="section">location</span> / &#123;</span><br><span class="line">        <span class="attribute">gzip</span> <span class="literal">on</span>;</span><br><span class="line">        <span class="attribute">gzip_min_length</span> <span class="number">1k</span>;</span><br><span class="line">        <span class="attribute">gzip_buffers</span>  <span class="number">4</span> <span class="number">32k</span>;</span><br><span class="line">        <span class="attribute">gzip_http_version</span> <span class="number">1</span>.<span class="number">1</span>;</span><br><span class="line">        <span class="attribute">gzip_comp_level</span> <span class="number">9</span>;</span><br><span class="line">        <span class="attribute">gzip_types</span> text/css  text/xml  application/javascript;</span><br><span class="line">        <span class="attribute">gzip_vary</span> <span class="literal">on</span>;</span><br><span class="line">        <span class="attribute">gzip_disable</span> <span class="string">&quot;MSIE [1-7]\.&quot;</span>;</span><br><span class="line">        <span class="attribute">root</span>  /usr/share/nginx/html;</span><br><span class="line">        <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：（需要先删除 index.html 文件，否则还是会访问网站主页）</p>
+<p><img src="/2025/02/25/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/web/002_nginx%E8%BF%9B%E9%98%B6%E5%AD%A6%E4%B9%A0/image-20250225233214503.png" alt="image-20250225233214503"></p>
+<h3 id="nginx-访问控制-allow-和-deny"><a href="#nginx-访问控制-allow-和-deny" class="headerlink" title="nginx 访问控制 allow 和 deny"></a>nginx 访问控制 allow 和 deny</h3><p>访问控制行为无非就两种：允许（加白）和禁止（加黑）</p>
+<p>访问控制有两种方式，一种是在OSI模型的四层传输层，一种是在第七层应用层。主机防火墙就是在第四层控制，nginx就是在第七层控制。</p>
+<p>演示访问控制，需要开启防火墙</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 示例1：防火墙直接禁用 IP 地址，这是基于四层的效果</span></span><br><span class="line"><span class="comment"># 开启主机防火墙</span></span><br><span class="line">[root@localhost 21:02:32 /usr/share/nginx/html]<span class="comment">#systemctl start firewalld.service</span></span><br><span class="line"><span class="comment"># 拉黑某些Ip地址</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>查看当前系统远程连接了哪些IP地址</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost 21:07:14 ~]<span class="comment">#w</span></span><br><span class="line"> 21:07:36 up  9:00,  2 <span class="built_in">users</span>,  load average: 0.00, 0.01, 0.05</span><br><span class="line">USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT</span><br><span class="line">root     tty1                      二17    2days  0.04s  0.04s -bash</span><br><span class="line">root     pts/0    10.0.0.1         21:01    0.00s  0.07s  0.00s w</span><br></pre></td></tr></table></figure>
+
+<p>可以看到10.0.0.1， 这是NAT 模式的网卡网关，也就是说物理机其实是使用的 VMnet8 虚拟网卡的 IP 地址进行连接的，如果通过防火墙将这个IP地址封了，那么再建立新的ssh连接应该就连不上这个虚拟机了。</p>
+<p>将 a.alfie.com 网站做一下访问控制 </p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    <span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">    <span class="attribute">server_name</span>  localhost;</span><br><span class="line">    <span class="attribute">access_log</span>   /opt/nginx/a_log;</span><br><span class="line">    <span class="attribute">autoindex</span>    <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">autoindex_exact_size</span>  <span class="literal">off</span>;</span><br><span class="line">    <span class="section">location</span> / &#123;</span><br><span class="line">        <span class="attribute">deny</span> <span class="number">10.0.0.1</span>; </span><br><span class="line">	<span class="attribute">allow</span> <span class="number">0.0.0.0</span>/<span class="number">0</span>;</span><br><span class="line">        <span class="attribute">gzip</span> <span class="literal">on</span>;</span><br><span class="line">        <span class="attribute">gzip_min_length</span> <span class="number">1k</span>;</span><br><span class="line">        <span class="attribute">gzip_buffers</span>  <span class="number">4</span> <span class="number">32k</span>;</span><br><span class="line">        <span class="attribute">gzip_http_version</span> <span class="number">1</span>.<span class="number">1</span>;</span><br><span class="line">        <span class="attribute">gzip_comp_level</span> <span class="number">9</span>;</span><br><span class="line">        <span class="attribute">gzip_types</span> text/css  text/xml  application/javascript;</span><br><span class="line">        <span class="attribute">gzip_vary</span> <span class="literal">on</span>;</span><br><span class="line">        <span class="attribute">gzip_disable</span> <span class="string">&quot;MSIE [1-7]\.&quot;</span>;</span><br><span class="line">        <span class="attribute">root</span>  /usr/share/nginx/html;</span><br><span class="line">        <span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>再访问，就会看到 403 forbidden 了</p>
+<p>黑名单就是先拒绝，再允许所有</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deny 10.0.0.1;</span><br><span class="line">allow 0.0.0.0/0;</span><br></pre></td></tr></table></figure>
+
+<p>白名单就是先允许，再拒绝所有</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sllow 10.0.0.1;			<span class="comment"># 白名单</span></span><br><span class="line">allow 10.0.0.13;		<span class="comment"># 白名单</span></span><br><span class="line"><span class="comment"># allow 10.0.0.13/24; 	 # 还可以写地址段</span></span><br><span class="line">deny 0.0.0.0/0;          <span class="comment"># 黑名单</span></span><br></pre></td></tr></table></figure>
+
+<p>四层禁止（显示无法连接），哪些情况访问的时候会看到403呢，七层禁止，没有首页 html 文件，文件没有读取权限，比如 nginx 访问某些文件，用的 nginx 用户身份，如果某个网站的文件， nginx 用户没有读取权限，那么也是403，还可以将某个网站的 index.html 文件权限修改一下看看效果。</p>
+<p>如果某个公司的网站都不想让某个IP地址访问，那么就用四层禁止，比较方便。</p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/网络/Linux_修改静态IP/" title=""></a></h2>
+                <p class="excerpt">
+                
+                Linux 修改静态IP修改网卡
+1234567[root@localhost ~]# cd /etc/sysconfig/network-scripts/     # 网卡位置[root@localhost network-scripts]# lsifcfg-ens33  ifdown-ib   
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2025-02-25T08:58:04.173Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/网络/Linux_修改静态IP/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/web/001_nginx安装/" title=""></a></h2>
+                <p class="excerpt">
+                
+                nginx 安装先修改下主机名，方便记忆
+1hostnamectl set-hostname web01
+
+1, 使用epel源安装1234567# yum repolist  # 查看当前系统的 yum 仓库有哪些软件包yum install epel-release -y       # 安装 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2025-02-25T08:58:03.991Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/web/001_nginx安装/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'lroyle'; 
+      
+  var disqus_identifier = '/2025/02/25/网络安全/web/002_nginx进阶学习/';
+  var disqus_title = '';
+  var disqus_url = 'http://liurong.love/2025/02/25/网络安全/web/002_nginx进阶学习/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2025 lroyle - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://liurong.love ">@LIURONG</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?691552d8a51493e93d82164e4a98f26d";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
