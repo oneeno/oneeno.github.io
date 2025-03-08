@@ -162,58 +162,6 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/28/网络安全/web/005_discuz论坛/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      discuz 论坛有很多网站是基于 discuz 来搭建的，比如IT技术人员经常逛的网站，吾爱破解，网景论坛，恩山论坛，电子发烧论坛，hifi论坛等。
-1，操作数据库1234567# 创建数据库create database discuz;# ip 地址为服务器所在的ipgrant all on discuz.* to discuz@&amp;#x27;10.0.0.%&amp;#x27; identified 
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2025-02-28T14:48:52.557Z" class="post-list__meta--date date">2025-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/28/网络安全/web/005_discuz论坛/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/28/网络安全/web/004_wordpress/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      wordpresswordpress 是一个博客网站，也是 php 开发的，使用的是 mysql 数据库。
-先创建一个适用于 wordpress 的数据库，授权好用户，然后搭建一个 wordpress 站点。
-1，进入 mysql ，创建 wordpress 数据库123# 创建数据库MariaDB [(none)]&amp;gt; create database wordpress;Query OK, 
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2025-02-28T10:19:11.612Z" class="post-list__meta--date date">2025-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/28/网络安全/web/004_wordpress/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/27/网络安全/web/004_mariadb数据库/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      mariadb数据库安装数据库12345678yum install mariadb-server mariadb -ysystemctl start mariadbsystemctl enable mariadb# mariadb 启动之后，会自动监听 3306 端口netstat -lntuptcp        0      0 0.0.0.0:3306            0.0.0.0
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2025-02-27T15:26:24.646Z" class="post-list__meta--date date">2025-02-27</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/27/网络安全/web/004_mariadb数据库/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/27/网络安全/web/003_安装PHP/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      安装 PHP-fpm安装 php-fpmnginx 和 php 要结合起来的话，需要安装 php-fpm
-1234567891011121314# php 语言很多功能都依赖一些特定插件，也叫做模块，[root@localhost 21:13:44 ~]#yum install php-fpm php-mbsting php-mysqlnd php-gd -y# 调整一些配置[root@local
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2025-02-27T13:33:09.136Z" class="post-list__meta--date date">2025-02-27</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/27/网络安全/web/003_安装PHP/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
       <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/Windows/001_关闭系统更新/" title="link to post.title"></a></h2>
       <p class="excerpt">
     
@@ -237,72 +185,87 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/网络/网络工具/" title="link to post.title"></a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/交易/专业谐波形态/" title="link to post.title">专业谐波形态</a></h2>
       <p class="excerpt">
     
-      网络工具1，nmap主要做信息收集。也叫主机安全扫描器，探测主机存活，端口开放情况。
-123456789101112131415161718192021222324yun install nmap -y[root@localhost ~]# yum install nmap -y[root@localhost ~]# nmap -y			# 默认安装的是6.40，不是最新版的，nmap: unre
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2025-02-25T08:58:04.190Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/网络/网络工具/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/网络/TCPDump抓包/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      tcpdump 抓包这个工具抓到的数据可以交给wireshark进行分析。
-tcpcump 是 linux 上的一个轻量级的抓包工具。支持针对网络层，协议，主机，网络或端口的过滤，并提供 and、or、not等逻辑语句来帮助你去掉无用的信息。
-tcpdump 只能抓取流经本机的数据包，一般有三个参数。比如指定地址，指定协议，或者指定网卡。
-安装 nginx12345678yum install e
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2025-02-25T08:58:04.182Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/网络/TCPDump抓包/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/网络/Linux_修改静态IP/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      Linux 修改静态IP修改网卡
-1234567[root@localhost ~]# cd /etc/sysconfig/network-scripts/     # 网卡位置[root@localhost network-scripts]# lsifcfg-ens33  ifdown-ib    ifdown-ppp       ifdown-tunnel  ifup-ib    ifup-p
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2025-02-25T08:58:04.173Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/网络/Linux_修改静态IP/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/web/002_nginx进阶学习/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      nginx 进阶学习nginx 多站点配置一个 nginx 上可以运行多个网站，有多种方式：
-12http:// + ip/域名 + 端口 + URI其中， ip/域名变了，那么网站入口就变了，端口变了，网站入口也变了，而每个网站都需要有自己的入口
+      未算胜，先算败！
+一定要做止损，盈利2：1一定要平一半。
+单边上升，使用 孕线，吞没形态，PinBar 找入场点做多。
+1，交易原理蜡烛图的分类
 
-方式一：多端口12345678910111213141516171819202122232425262728293031323334353637[r
+2，理解市场（技术分析的基石——结构）通过结构寻找关键K线。
+先有胜率，再有交易系统，最后才是赚钱
+仔细观察过去图表，我们会发现价格经常在同一“水平”位置停留多次，并非常尊重这一区域，这一区域的表现形式常为K线图上密集成交区和拐点周围。
+结构示意图
+结
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2025-02-25T08:58:03.994Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/web/002_nginx进阶学习/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2025-02-25T07:28:44.000Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
+</span><a class="btn-border-small" href="/2025/02/25/交易/专业谐波形态/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/web/001_nginx安装/" title="link to post.title"></a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2025/02/24/交易/机构订单练习/" title="link to post.title">机构订单练习</a></h2>
       <p class="excerpt">
     
-      nginx 安装先修改下主机名，方便记忆
-1hostnamectl set-hostname web01
+      交易基础
+风险管理
+交易处理
+市场和交易知识
+执行力
+交易心理
+自信
+经验
 
-1, 使用epel源安装1234567# yum repolist  # 查看当前系统的 yum 仓库有哪些软件包yum install epel-release -y       # 安装 yum 的扩展包yum install nginx -ysystemctl start nginx.
+以上七点除了执行力，其它都可以通过学习而得到。但是上面七条都是建立在有一个核心策略的基础之上，否则，就是空谈。
+任何投资交易 策略都包含3个重要因素
+
+几率
+风险
+杠杆
+
+核心策略
+有效杠杆不要超过本金的10倍
+一次交易的损失不要超过本金的1%-2%
+如果一天交易的损失超过本金的5%，停止当天交易
+
+时间级别现货  ３０
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2025-02-25T08:58:03.991Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/web/001_nginx安装/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2025-02-24T14:39:45.000Z" class="post-list__meta--date date">2025-02-24</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
+</span><a class="btn-border-small" href="/2025/02/24/交易/机构订单练习/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2025/02/05/交易/祼K线交易/" title="link to post.title">祼K线交易</a></h2>
+      <p class="excerpt">
+    
+      PinebarPinbar 是祼K线交易法中最核心的概念之一。
+Pinbar包含以下形态
+
+锤子线
+倒锤子线
+上吊线
+墓碑线
+T字线
+倒T字线
+…
+
+只要K线的影线在单一方向上很长，无论是上影线还是下影线，并且实体很小，都可以归类为Pinbar.
+
+上图是最典型的锤子线，一般要求影线的长度是实体的两倍以上，锤子线最强势的形态是收盘价等于最高价。
+可以在更小的时间周期的K线图表查看特定K线的内部结构
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2025-02-05T14:39:45.000Z" class="post-list__meta--date date">2025-02-05</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%8A%95%E6%9C%BA%E7%90%86%E8%AE%BA/" rel="tag">投机理论</a>
+</span><a class="btn-border-small" href="/2025/02/05/交易/祼K线交易/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   

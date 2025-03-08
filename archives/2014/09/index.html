@@ -182,8 +182,158 @@
     </li>
   
     
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/docker/001_Kali安装dokcer/" title="link to post.title">Kali 安装 docker</a></h2>
+      <p class="excerpt">
+    
+      第一步：添加Docker官方的GPG密钥12# 添加 Docker 官方的GPG 密钥curl  -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+
+
+第二步： 更新源1echo &amp;#x27;deb https://download.docker.com/linux/debian stretch stab
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/docker/" rel="tag">docker</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/docker/001_Kali安装dokcer/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/web/001_nginx安装/" title="link to post.title">nginx 安装</a></h2>
+      <p class="excerpt">
+    
+      先修改下主机名，方便记忆
+1hostnamectl set-hostname web01
+
+1, 使用epel源安装1234567# yum repolist  # 查看当前系统的 yum 仓库有哪些软件包yum install epel-release -y       # 安装 yum 的扩展包yum install nginx -ysystemctl start nginx.services
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/nginx/" rel="tag">nginx</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/web/001_nginx安装/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/web/002_nginx进阶学习/" title="link to post.title">nginx 进阶学习</a></h2>
+      <p class="excerpt">
+    
+      nginx 多站点配置一个 nginx 上可以运行多个网站，有多种方式：
+12http:// + ip/域名 + 端口 + URI其中， ip/域名变了，那么网站入口就变了，端口变了，网站入口也变了，而每个网站都需要有自己的入口
+
+方式一：多端口12345678910111213141516171819202122232425262728293031323334353637[root@web01 
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/nginx/" rel="tag">nginx</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/web/002_nginx进阶学习/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/web/003_安装PHP/" title="link to post.title">安装 PHP-fpm</a></h2>
+      <p class="excerpt">
+    
+      安装 php-fpmnginx 和 php 要结合起来的话，需要安装 php-fpm
+1234567891011121314# php 语言很多功能都依赖一些特定插件，也叫做模块，[root@localhost 21:13:44 ~]#yum install php-fpm php-mbsting php-mysqlnd php-gd -y# 调整一些配置[root@localhost 21:34
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/php/" rel="tag">php</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/web/003_安装PHP/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/web/004_mariadb数据库/" title="link to post.title">mariadb数据库</a></h2>
+      <p class="excerpt">
+    
+      安装数据库12345678yum install mariadb-server mariadb -ysystemctl start mariadbsystemctl enable mariadb# mariadb 启动之后，会自动监听 3306 端口netstat -lntuptcp        0      0 0.0.0.0:3306            0.0.0.0:*        
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/web/004_mariadb数据库/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/web/005_discuz论坛/" title="link to post.title">discuz 论坛</a></h2>
+      <p class="excerpt">
+    
+      有很多网站是基于 discuz 来搭建的，比如IT技术人员经常逛的网站，吾爱破解，网景论坛，恩山论坛，电子发烧论坛，hifi论坛等。
+1，操作数据库1234567# 创建数据库create database discuz;# ip 地址为服务器所在的ipgrant all on discuz.* to discuz@&amp;#x27;10.0.0.%&amp;#x27; identified by &amp;#x27;
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/web/005_discuz论坛/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/web/004_wordpress/" title="link to post.title">wordpress</a></h2>
+      <p class="excerpt">
+    
+      wordpress 是一个博客网站，也是 php 开发的，使用的是 mysql 数据库。
+先创建一个适用于 wordpress 的数据库，授权好用户，然后搭建一个 wordpress 站点。
+1，进入 mysql ，创建 wordpress 数据库123# 创建数据库MariaDB [(none)]&amp;gt; create database wordpress;Query OK, 1 row aff
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/web/004_wordpress/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/网络/Linux_修改静态IP/" title="link to post.title">Linux 修改静态IP</a></h2>
+      <p class="excerpt">
+    
+      修改网卡
+1234567[root@localhost ~]# cd /etc/sysconfig/network-scripts/     # 网卡位置[root@localhost network-scripts]# lsifcfg-ens33  ifdown-ib    ifdown-ppp       ifdown-tunnel  ifup-ib    ifup-plusb   ifup-
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/网络/Linux_修改静态IP/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/数据库/001_MySQL/" title="link to post.title">MySQL 数据库</a></h2>
+      <p class="excerpt">
+    
+      CentOS7默认安装的是 MariaDB-5.5.68 或者65
+1，检查环境查看 mariadb 版本的指令
+12345systemctl status firewalld          # 查看防火墙状态[root@localhost ~]# rpm -qa |grep mariadbmariadb-server-5.5.68-1.el7.x86_64mariadb-libs-5.5.6
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/数据库/001_MySQL/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
   </ol>
 
+
+  <nav class="pagination" role="navigation">
+    
+    <span class="pagination__page-number" >  1 / 2 </span>
+    
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/archives/2014/09/page/2/">更早 &rarr;</a>
+    
+  </nav>
 
  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },

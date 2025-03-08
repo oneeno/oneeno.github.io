@@ -162,75 +162,64 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2014/12/11/2014/141211_KON五子补完/" title="link to post.title">K-on五子补完</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/网络/Linux_修改静态IP/" title="link to post.title">Linux 修改静态IP</a></h2>
       <p class="excerpt">
     
-      K-on五子补完，历时三月，坐等明年推新款！
-
-
-
-
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2014-12-11T01:15:55.000Z" class="post-list__meta--date date">2014-12-11</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%89%8B%E5%8A%9E/" rel="tag">手办</a>
-</span><a class="btn-border-small" href="/2014/12/11/2014/141211_KON五子补完/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2014/12/05/2014/141205_科学怪人/" title="link to post.title">科学怪人</a></h2>
-      <p class="excerpt">
-    
-      科学怪人Ｘ钟楼怪人Ｘ绿巨人Ｘ路飞
-
-
-
-
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2014-12-05T08:15:55.000Z" class="post-list__meta--date date">2014-12-05</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%89%8B%E5%8A%9E/" rel="tag">手办</a>
-</span><a class="btn-border-small" href="/2014/12/05/2014/141205_科学怪人/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2014/11/24/2014/141124_好果子/" title="link to post.title">好果子</a></h2>
-      <p class="excerpt">
-    
-      好果子！海贼王我当定了！
-
-
-
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2014-11-24T04:15:55.000Z" class="post-list__meta--date date">2014-11-24</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%89%8B%E5%8A%9E/" rel="tag">手办</a>
-</span><a class="btn-border-small" href="/2014/11/24/2014/141124_好果子/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/2014/140919_k_on/" title="link to post.title">五周年集齐三员了</a></h2>
-      <p class="excerpt">
-    
-      K-ON五周年集齐三员了，等剩下的两只大概还得一两个月，我慢我慢！
-
-
-
-
-
-
-
+      修改网卡
+1234567[root@localhost ~]# cd /etc/sysconfig/network-scripts/     # 网卡位置[root@localhost network-scripts]# lsifcfg-ens33  ifdown-ib    ifdown-ppp       ifdown-tunnel  ifup-ib    ifup-plusb   ifup-
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/%E6%89%8B%E5%8A%9E/" rel="tag">手办</a>
-</span><a class="btn-border-small" href="/2014/09/19/2014/140919_k_on/">继续阅读</a></div>
+  <a class="-none-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/网络/Linux_修改静态IP/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/数据库/001_MySQL/" title="link to post.title">MySQL 数据库</a></h2>
+      <p class="excerpt">
+    
+      CentOS7默认安装的是 MariaDB-5.5.68 或者65
+1，检查环境查看 mariadb 版本的指令
+12345systemctl status firewalld          # 查看防火墙状态[root@localhost ~]# rpm -qa |grep mariadbmariadb-server-5.5.68-1.el7.x86_64mariadb-libs-5.5.6
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/数据库/001_MySQL/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/网络/TCPDump抓包/" title="link to post.title">tcpdump 抓包</a></h2>
+      <p class="excerpt">
+    
+      这个工具抓到的数据可以交给wireshark进行分析。
+tcpcump 是 linux 上的一个轻量级的抓包工具。支持针对网络层，协议，主机，网络或端口的过滤，并提供 and、or、not等逻辑语句来帮助你去掉无用的信息。
+tcpdump 只能抓取流经本机的数据包，一般有三个参数。比如指定地址，指定协议，或者指定网卡。
+安装 nginx12345678yum install epel-releas
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/网络/TCPDump抓包/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/网络/网络工具/" title="link to post.title">网络工具</a></h2>
+      <p class="excerpt">
+    
+      1，nmap主要做信息收集。也叫主机安全扫描器，探测主机存活，端口开放情况。
+123456789101112131415161718192021222324yun install nmap -y[root@localhost ~]# yum install nmap -y[root@localhost ~]# nmap -y			# 默认安装的是6.40，不是最新版的，nmap: unrecogn
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/网络/网络工具/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
