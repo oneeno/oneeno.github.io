@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>LIURONG | 面向大海 | 重新启航</title>
+    <title>CentOS更新yum源 | LIURONG</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="做时间的朋友！">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="LIURONG | 面向大海 | 重新启航">
+    <meta name="twitter:title" content="CentOS更新yum源 | LIURONG">
     <meta name="twitter:description" content="做时间的朋友！">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="LIURONG | 面向大海 | 重新启航">
+    <meta property="og:title" content="CentOS更新yum源 | LIURONG">
     <meta property="og:description" content="做时间的朋友！">
 
     
@@ -41,7 +41,7 @@
     <link rel="alternate" type="application/rss+xml" title="LIURONG" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://liurong.love/2025/03/03/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/Linux/Linux%E5%85%B6%E5%AE%83/001_CentOS%E6%9B%B4%E6%96%B0yum%E6%BA%90/"/>
+    <link rel="canonical" href="http://liurong.love/2024/05/02/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/Linux/Linux%E5%85%B6%E5%AE%83/001_CentOS%E6%9B%B4%E6%96%B0yum%E6%BA%90/"/>
 
                  
 </head>
@@ -160,17 +160,19 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2025-03-03T08:03:05.095Z" class="post-list__meta--date date">2025-03-03</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <time datetime="2024-05-02T14:39:45.000Z" class="post-list__meta--date date">2024-05-02</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
+ </span>
       <span class="page-pv">
        阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title"></h1>
+    <h1 class="post-title">CentOS更新yum源</h1>
   </header>
 
   <section class="post">
-    <h2 id="CentOS更新yum源"><a href="#CentOS更新yum源" class="headerlink" title="CentOS更新yum源"></a>CentOS更新yum源</h2><h3 id="什么是repo文件？"><a href="#什么是repo文件？" class="headerlink" title="什么是repo文件？"></a>什么是repo文件？</h3><p>​    repo 文件是 Linux 中yum源（软件仓库）的配置文件，通常一个 repo 文件定义了一个或者多个软件仓库的细节内容，例如我们将从哪里下载需要安装或者升级的软件包，repo文件中的设置内容将被yum读取和应用！</p>
+    <h3 id="什么是repo文件？"><a href="#什么是repo文件？" class="headerlink" title="什么是repo文件？"></a>什么是repo文件？</h3><p>​    repo 文件是 Linux 中yum源（软件仓库）的配置文件，通常一个 repo 文件定义了一个或者多个软件仓库的细节内容，例如我们将从哪里下载需要安装或者升级的软件包，repo文件中的设置内容将被yum读取和应用！</p>
 <h4 id="1，做好备份，如果更新失败，可以切换回去"><a href="#1，做好备份，如果更新失败，可以切换回去" class="headerlink" title="1，做好备份，如果更新失败，可以切换回去"></a>1，做好备份，如果更新失败，可以切换回去</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br></pre></td></tr></table></figure>
 
 <p>如果有多个，可以通过下面命令备份</p>
@@ -194,13 +196,32 @@
 
 <h3 id="常用-yum-命令"><a href="#常用-yum-命令" class="headerlink" title="常用 yum 命令"></a>常用 yum 命令</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">常用命令</span><br><span class="line">yum install softwarename  <span class="comment">#安装</span></span><br><span class="line"></span><br><span class="line">yum remove softwarename <span class="comment">#卸载软件</span></span><br><span class="line"></span><br><span class="line">yum list softwarename <span class="comment">#查看软件源中是否有此软件</span></span><br><span class="line"></span><br><span class="line">yum list all <span class="comment">#列出所有软件名称</span></span><br><span class="line">yum list installed <span class="comment">#列出已经安装的软件名称</span></span><br><span class="line"></span><br><span class="line">yum list available <span class="comment">#列出可以用yum安装的软件</span></span><br><span class="line"></span><br><span class="line">yum clean all <span class="comment">#清空yum缓存</span></span><br><span class="line"></span><br><span class="line">yum search softwareinfo <span class="comment">#根据软件信息搜索软件名字（如，使用search web搜索web浏览器）</span></span><br><span class="line"></span><br><span class="line">yum whatprovides filename <span class="comment">#在yum源中查找包含filename文件的软件包（如，whatprovides rm搜索汉含rm的软件，命令实质上是文件）</span></span><br><span class="line"></span><br><span class="line">yum update <span class="comment">#更新软件，会存在未知问题，一般不对服务器升降级</span></span><br><span class="line">yum <span class="built_in">history</span> <span class="comment">#查看系统软件改变历史</span></span><br><span class="line">yum reinstall softwarename <span class="comment">#重新安装</span></span><br><span class="line">yum info softwarename <span class="comment">#查看软件信息</span></span><br><span class="line"></span><br><span class="line">yum <span class="built_in">groups</span> list <span class="comment">#查看软件组信息</span></span><br><span class="line"></span><br><span class="line">yum <span class="built_in">groups</span> info softwarename <span class="comment">#查看软件组内包含的软件</span></span><br><span class="line">yum <span class="built_in">groups</span> install softwarename <span class="comment">#安装组件</span></span><br><span class="line"></span><br><span class="line">yum <span class="built_in">groups</span> remove softwarename <span class="comment">#卸载组件</span></span><br><span class="line"></span><br><span class="line">yum clean all <span class="comment">#清理缓存</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="2025-新方法"><a href="#2025-新方法" class="headerlink" title="2025 新方法"></a>2025 新方法</h3><h4 id="第一步：修改仓库"><a href="#第一步：修改仓库" class="headerlink" title="第一步：修改仓库"></a>第一步：修改仓库</h4><p>进入&#x2F;etc&#x2F;yum.repos.d目录下找到 CentOS-Base.repo</p>
+<p>进入目录：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/yum.repos.d</span><br></pre></td></tr></table></figure>
 
+<p>然后执行</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span>  CentOS-Base.repo   CentOS-Base.repo.backup</span><br><span class="line">vi CentOS-Base.repo</span><br></pre></td></tr></table></figure>
 
+<p>进去之后改成</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># CentOS-Base.repo</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># The mirror system uses the connecting IP address of the client and the</span></span><br><span class="line"><span class="comment"># update status of each mirror to pick mirrors that are updated to and</span></span><br><span class="line"><span class="comment"># geographically close to the client.  You should use this for CentOS updates</span></span><br><span class="line"><span class="comment"># unless you are manually picking other mirrors.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># If the mirrorlist= does not work for you, as a fall back you can try the </span></span><br><span class="line"><span class="comment"># remarked out baseurl= line instead.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"> </span><br><span class="line">[base]</span><br><span class="line">name=CentOS-<span class="variable">$releasever</span> - Base</span><br><span class="line"><span class="comment">#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os&amp;infra=$infra</span></span><br><span class="line"><span class="comment">#baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/</span></span><br><span class="line"><span class="comment">#baseurl=http://vault.centos.org/7.9.2009/x86_64/os/</span></span><br><span class="line">baseurl=http://vault.centos.org/7.9.2009/os/<span class="variable">$basearch</span>/</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7</span><br><span class="line"> </span><br><span class="line"><span class="comment">#released updates </span></span><br><span class="line">[updates]</span><br><span class="line">name=CentOS-<span class="variable">$releasever</span> - Updates</span><br><span class="line"><span class="comment">#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates&amp;infra=$infra</span></span><br><span class="line"><span class="comment">#baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/</span></span><br><span class="line"><span class="comment">#baseurl=http://vault.centos.org/7.9.2009/x86_64/os/</span></span><br><span class="line">baseurl=http://vault.centos.org/7.9.2009/updates/<span class="variable">$basearch</span>/</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7</span><br><span class="line"> </span><br><span class="line"><span class="comment">#additional packages that may be useful</span></span><br><span class="line">[extras]</span><br><span class="line">name=CentOS-<span class="variable">$releasever</span> - Extras</span><br><span class="line"><span class="comment">#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras&amp;infra=$infra</span></span><br><span class="line"><span class="comment">#$baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/</span></span><br><span class="line"><span class="comment">#baseurl=http://vault.centos.org/7.9.2009/x86_64/os/</span></span><br><span class="line">baseurl=http://vault.centos.org/7.9.2009/extras/<span class="variable">$basearch</span>/</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7</span><br><span class="line"> </span><br><span class="line"><span class="comment">#additional packages that extend functionality of existing packages</span></span><br><span class="line">[centosplus]</span><br><span class="line">name=CentOS-<span class="variable">$releasever</span> - Plus</span><br><span class="line"><span class="comment">#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus&amp;infra=$infra</span></span><br><span class="line"><span class="comment">#baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/</span></span><br><span class="line"><span class="comment">#baseurl=http://vault.centos.org/7.9.2009/x86_64/os/</span></span><br><span class="line">baseurl=http://vault.centos.org/7.9.2009/centosplus/<span class="variable">$basearch</span>/</span><br><span class="line">gpgcheck=1</span><br><span class="line">enabled=0</span><br><span class="line">gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7</span><br></pre></td></tr></table></figure>
 
+<p>保存之后，再执行</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
 
+<p>其实缓存之后 可以执行以下语句</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y yum-utils device-mapper-persistent-data lvm2</span><br></pre></td></tr></table></figure>
 
+<h4 id="第二步：配置成阿里云镜像"><a href="#第二步：配置成阿里云镜像" class="headerlink" title="第二步：配置成阿里云镜像"></a>第二步：配置成阿里云镜像</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo</span><br></pre></td></tr></table></figure>
 
+<p>或者用</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo</span><br></pre></td></tr></table></figure>
 
+<p>然后执行</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> CentOS-Base.repo</span><br></pre></td></tr></table></figure>
+
+<p>最后执行</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum clean all</span><br><span class="line">sudo yum makecache</span><br></pre></td></tr></table></figure>
 
 
   </section>
@@ -210,26 +231,67 @@
 <section class="read-more">
            
     
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2024/05/03/网络安全/Linux/Linux基础/wl_003_Linux用户和用户组管理/" title="用户和用户组管理">用户和用户组管理</a></h2>
+                <p class="excerpt">
+                
+                1，用户管理创建用户
+123useradd# 创建一个用户useradd test1
+
+设置密码
+远程 SSH 连接是需要密码的，所以想让某个用户登录系统，必须设置密码
+12passwdpasswd test1
+
+
+普通用户自己修改密码
+1passwd  	# 给当前登录用户修改密码，root用户修
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2024-05-03T14:39:45.000Z" class="post-list__meta--date date">2024-05-03</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
+</span><a class="btn-border-small" href="/2024/05/03/网络安全/Linux/Linux基础/wl_003_Linux用户和用户组管理/">继续阅读</a></div>
+                           
+            </div>
         
         
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/2025/02/25/网络安全/Windows/001_关闭系统更新/" title=""></a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2024/05/02/网络安全/Linux/Linux基础/wl_001_安装Centos/" title="安装Linux">安装Linux</a></h2>
                 <p class="excerpt">
                 
-                关闭系统更新1,关闭服务中的自动更新打开 “任务管理器” –&amp;gt;  点击左下角的 “打开服务”。
-然后在【服务】窗口，打开 【Windows Update】
+                1, 选择第一个
+2， 选择语言
+3， 安装盘符设置
+4， 选择我要配置分区
 
-有服务状态处点击【停止】
-在启动类型处选择【禁用】
+选择标准分区
 
-在恢复栏中的第一次失败中选择【无操作】，然后点击应用。
+分区设置
 
-这里禁了，他还会自动运用
+然后点完成
+
+点接受更改
+
+3 关掉keydump 功能
+把禁用keydump 前面的勾去掉
+
+开启连网功能
+打开以太网的按钮
+
+5 安装常用软件
+勾选常用的3个，如下图
+
+点开始安装
+
+创建
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2025-02-25T08:58:04.230Z" class="post-list__meta--date date">2025-02-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2025/02/25/网络安全/Windows/001_关闭系统更新/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2024-05-02T14:39:45.000Z" class="post-list__meta--date date">2024-05-02</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
+</span><a class="btn-border-small" href="/2024/05/02/网络安全/Linux/Linux基础/wl_001_安装Centos/">继续阅读</a></div>
                        
             </div>
         
@@ -246,9 +308,9 @@
   <script type="text/javascript">
       var disqus_shortname = 'lroyle'; 
       
-  var disqus_identifier = '/2025/03/03/网络安全/Linux/Linux其它/001_CentOS更新yum源/';
-  var disqus_title = '';
-  var disqus_url = 'http://liurong.love/2025/03/03/网络安全/Linux/Linux其它/001_CentOS更新yum源/';
+  var disqus_identifier = '/2024/05/02/网络安全/Linux/Linux其它/001_CentOS更新yum源/';
+  var disqus_title = 'CentOS更新yum源';
+  var disqus_url = 'http://liurong.love/2024/05/02/网络安全/Linux/Linux其它/001_CentOS更新yum源/';
   
 
       /* * * DON'T EDIT BELOW THIS LINE * * */

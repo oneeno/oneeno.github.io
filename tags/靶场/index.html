@@ -162,97 +162,24 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/03/网络安全/Linux/Linux基础/wl_003_Linux用户和用户组管理/" title="link to post.title">用户和用户组管理</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/靶场/靶场/" title="link to post.title">靶场</a></h2>
       <p class="excerpt">
     
-      1，用户管理创建用户
-123useradd# 创建一个用户useradd test1
-
-设置密码
-远程 SSH 连接是需要密码的，所以想让某个用户登录系统，必须设置密码
-12passwdpasswd test1
-
-
-普通用户自己修改密码
-1passwd  	# 给当前登录用户修改密码，root用户修改密码不需要输入旧密码，普通用户需要输入旧密码
-
-
-一般Linux的密码是有复杂度要求的，比如下面这
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2024-05-03T14:39:45.000Z" class="post-list__meta--date date">2024-05-03</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/03/网络安全/Linux/Linux基础/wl_003_Linux用户和用户组管理/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/02/网络安全/Linux/Linux其它/001_CentOS更新yum源/" title="link to post.title">CentOS更新yum源</a></h2>
-      <p class="excerpt">
-    
-      什么是repo文件？​    repo 文件是 Linux 中yum源（软件仓库）的配置文件，通常一个 repo 文件定义了一个或者多个软件仓库的细节内容，例如我们将从哪里下载需要安装或者升级的软件包，repo文件中的设置内容将被yum读取和应用！
-1，做好备份，如果更新失败，可以切换回去1mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2024-05-02T14:39:45.000Z" class="post-list__meta--date date">2024-05-02</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/02/网络安全/Linux/Linux其它/001_CentOS更新yum源/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2024/05/02/网络安全/Linux/Linux基础/wl_001_安装Centos/" title="link to post.title">安装Linux</a></h2>
-      <p class="excerpt">
-    
-      1, 选择第一个
-2， 选择语言
-3， 安装盘符设置
-4， 选择我要配置分区
-
-选择标准分区
-
-分区设置
-
-然后点完成
-
-点接受更改
-
-3 关掉keydump 功能
-把禁用keydump 前面的勾去掉
-
-开启连网功能
-打开以太网的按钮
-
-5 安装常用软件
-勾选常用的3个，如下图
-
-点开始安装
-
-创建密码
-
-
+      在线靶场网址：
+墨者学院：https://mozhe.cn/
+docker-compose 启动靶场环境：https://vulhub.org/#/environments/
 
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2024-05-02T14:39:45.000Z" class="post-list__meta--date date">2024-05-02</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="-none-link" href="/tags/Linux/" rel="tag">Linux</a>
-</span><a class="btn-border-small" href="/2024/05/02/网络安全/Linux/Linux基础/wl_001_安装Centos/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/%E9%9D%B6%E5%9C%BA/" rel="tag">靶场</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/靶场/靶场/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
   </ol>
 
-
-  <nav class="pagination" role="navigation">
-    
-      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/#blog">&larr; 最近</a>
-    
-    <span class="pagination__page-number" >  2 / 2 </span>
-    
-  </nav>
 
  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },

@@ -191,13 +191,39 @@ conf: &#39;prod_8bd7f12de9e89a0377b171df44ea99d6&#39;
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/docker/002_CentOS7安装docker/" title="link to post.title">CentOS7 安装 docker</a></h2>
+      <p class="excerpt">
+    
+      使用yum 安装 docker
+1yum install docker -y
+
+启动 docker
+1systemctl start docker
+
+设置开机自启
+1systemctl enable docker
+
+体验 docker 版 nginx 最新版
+1docker run -d -p 80:80 nginx
+
+体验 docker 版 nginx 1.16
+1docker run -d -
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="-none-link" href="/tags/docker/" rel="tag">docker</a>
+</span><a class="btn-border-small" href="/2014/09/19/网络安全/docker/002_CentOS7安装docker/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/2014/09/19/网络安全/docker/001_Kali安装dokcer/" title="link to post.title">Kali 安装 docker</a></h2>
       <p class="excerpt">
     
-      第一步：添加Docker官方的GPG密钥12# 添加 Docker 官方的GPG 密钥curl  -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+      更新系统和软件123456apt-get update  #从软件源获取最新软件包索引文件apt-get upgrade  #用于软件包升级的命令如果流量不是很稳定就可能需要apt-get update --fix-missing  #用于修复软件包安装或升级过程中可能出现的软件包缺失问题的命令
 
-
-第二步： 更新源1echo &amp;#x27;deb https://download.docker.com/linux/debian stretch stab
+第一步：添加Docker官方的GPG密钥12# 添加 Docker 官方的GPG 密钥curl  -
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2014-09-19T08:15:55.000Z" class="post-list__meta--date date">2014-09-19</time> &#8226; <span class="post-list__meta--tags tags">于 
